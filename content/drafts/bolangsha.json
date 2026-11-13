@@ -1,0 +1,433 @@
+{
+  "schemaVersion": 1,
+  "draftOnly": true,
+  "checkedAt": "2026-10-28",
+  "chapter": {
+    "id": "bolangsha",
+    "order": 3,
+    "title": "巡游遇刺——博浪沙的袭击",
+    "subtitle": "一击未中，车驾与追捕继续",
+    "eraLabel": "秦朝 · 统一之后",
+    "timeLabel": "前218年 · 秦始皇二十九年",
+    "eventYear": -218,
+    "status": "draft",
+    "version": "0.1.1",
+    "reviewStatus": "pending",
+    "summary": "一次误中副车的袭击，把统一后的巡游与亡国者的反抗连接起来。",
+    "paragraphs": [
+      "铁椎击中了车驾，却没有击中秦始皇。《史记·留侯世家》写，这场袭击误中了副车。地点是阳武的博浪沙。一次冲着皇帝而来的行刺，没能取走他的性命，紧随而来的是搜捕。",
+      "这时是前218年，秦始皇二十九年，六国已经归秦。皇帝再次东巡。此前一年，他曾登山、刻石，让沿途看到新王朝对功业与秩序的宣告。如今行经博浪沙，一次针对皇帝本人的袭击，打断了这段行程。",
+      "袭击的安排者是张良。按《留侯世家》的叙述，他出身韩国世家，祖父和父亲曾相继辅佐韩国多位君主。韩国被秦消灭时，张良还没有做官。他拿出家财寻找能刺杀秦王的人，要为韩国报仇。六国归于一统之后，这项谋划仍在继续，目标也从秦王变成了秦始皇。",
+      "张良后来求助于沧海君，找到了力士，准备了铁椎。秦始皇东游，给这场谋划带来了出手的机会。张良与同伴在博浪沙发动袭击；铁椎命中车驾，击中的却是副车。皇帝没有被杀，拿出家财筹备的行动就此落空。",
+      "秦始皇发起追查，却没能抓到袭击者，随即下令天下大搜十日。张良则改换姓名，逃往下邳藏身。寻找刺客、筹备行刺的阶段结束了，张良自己成了需要躲避追捕的人。一次袭击，没有推翻皇帝，也没有让报仇者就此落网。",
+      "东巡没有就此结束。《秦始皇本纪》接着记载，始皇登之罘刻石，又前往琅邪，最后取道上党返回。皇帝继续以巡行和刻石宣告自己的功业，张良则在下邳隐姓藏身。两人的去路，由博浪沙的一次袭击，转入了巡游与逃亡。",
+      "博浪沙之后，故事还将走过数年。下一章，叙事将转向沙丘，走进皇帝身后的继承与权力争夺。"
+    ],
+    "sourceIds": [
+      "draft-bolangsha-qin-unification",
+      "draft-bolangsha-qin-tour28",
+      "draft-bolangsha-liuhou-background",
+      "draft-bolangsha-liuhou-attack",
+      "draft-bolangsha-qin-search",
+      "draft-bolangsha-liuhou-escape",
+      "draft-bolangsha-qin-continue",
+      "draft-bolangsha-qin-return",
+      "draft-bolangsha-tongjian-date"
+    ],
+    "supplements": [
+      {
+        "title": "两篇史记怎样合读",
+        "body": "本纪记录二十九年行程、遇袭及搜捕；留侯世家补充张良背景、铁椎、副车与逃匿。两篇同属史记，不能当作互相独立的现场证词；通鉴是后出编年整理。读者可合读两线，但不能据此认定始皇当场已知道幕后姓名、动机或张良的逃亡地点。"
+      },
+      {
+        "title": "副车与没有写明的细节",
+        "body": "副车指车驾中的非皇帝所乘车辆。本章采用的段落没有交代完整的车队排列、辨认目标的方法、力士姓名、同伴人数和车内伤亡；这些缺失不补成史实，也不等于断言全部古籍都没有记载。"
+      },
+      {
+        "title": "这次袭击能解释什么",
+        "body": "可以说明一次针对皇帝的未遂袭击与紧随的搜捕，不能单凭此事解释后续所有制度、巡游或秦朝灭亡。正文呈现行动和结果；制度变化与人物心理如果缺少直接依据，另作推断或创作标明。"
+      }
+    ],
+    "nextId": "shaqiu"
+  },
+  "bodyHanCharacters": 538,
+  "claims": [
+    {
+      "id": "BS-F01",
+      "paragraphs": [
+        1,
+        2,
+        4
+      ],
+      "statement": "秦始皇二十九年东巡，在阳武博浪沙遭袭；通行纪年为前218年。",
+      "sourceIds": [
+        "draft-bolangsha-qin-search",
+        "draft-bolangsha-tongjian-date"
+      ],
+      "treatment": "纪年和发生地点有明确定位；不补精确袭击日或现代遗址坐标。"
+    },
+    {
+      "id": "BS-F02",
+      "paragraphs": [
+        2
+      ],
+      "statement": "此次遇袭在统一之后，前一年已经东巡、刻石颂秦德。",
+      "sourceIds": [
+        "draft-bolangsha-qin-unification",
+        "draft-bolangsha-qin-tour28"
+      ],
+      "treatment": "“让沿途看到新王朝宣告”为对刻石活动功能的概述；不把功德碑文作为无反抗的事实证明。"
+    },
+    {
+      "id": "BS-F03",
+      "paragraphs": [
+        3
+      ],
+      "statement": "张良出身韩国世家，秦灭韩时未仕韩，以家财求客报韩仇。",
+      "sourceIds": [
+        "draft-bolangsha-liuhou-background"
+      ],
+      "treatment": "按留侯世家叙述呈现，“祖父父亲相继辅佐多位君主”见定位整段；“目标从秦王变成秦始皇”连接灭韩后求刺与统一后东巡的时间关系，不新增人物心理实录。"
+    },
+    {
+      "id": "BS-F04",
+      "paragraphs": [
+        1,
+        4
+      ],
+      "statement": "张良求助沧海君，得力士、备铁椎，随东巡机会袭击，误中副车。",
+      "sourceIds": [
+        "draft-bolangsha-liuhou-attack",
+        "draft-bolangsha-tongjian-date"
+      ],
+      "treatment": "本纪不详述，正文明确给留侯世家归属；攻击姿势、车队编制、力士姓名不补写。"
+    },
+    {
+      "id": "BS-F05",
+      "paragraphs": [
+        1,
+        5
+      ],
+      "statement": "始皇追查未获，下令天下大索十日。",
+      "sourceIds": [
+        "draft-bolangsha-qin-search"
+      ],
+      "treatment": "十日是命令期限，不写成已经执行完整十日或全国每户搜查效果已知。"
+    },
+    {
+      "id": "BS-F06",
+      "paragraphs": [
+        5,
+        6
+      ],
+      "statement": "张良更换姓名，逃匿下邳。",
+      "sourceIds": [
+        "draft-bolangsha-liuhou-escape"
+      ],
+      "treatment": "属于读者可见的后续去向，不成为当场始皇的自动知情。"
+    },
+    {
+      "id": "BS-F07",
+      "paragraphs": [
+        6
+      ],
+      "statement": "始皇遇袭后仍登之罘刻石，赴琅邪，由上党归。",
+      "sourceIds": [
+        "draft-bolangsha-qin-continue",
+        "draft-bolangsha-qin-return",
+        "draft-bolangsha-tongjian-date"
+      ],
+      "treatment": "顺序取自本纪；不把后来的沿途事实提前进入角色C即时场景。"
+    },
+    {
+      "id": "BS-B01",
+      "paragraphs": [
+        6,
+        7
+      ],
+      "statement": "事件连接、章节承接与补充区的资料/因果边界。",
+      "sourceIds": [
+        "draft-bolangsha-liuhou-attack",
+        "draft-bolangsha-liuhou-escape",
+        "draft-bolangsha-qin-search",
+        "draft-bolangsha-qin-continue",
+        "draft-bolangsha-qin-return"
+      ],
+      "treatment": "正文仅连接行刺落空、搜捕、逃匿与继续巡游；末段沙丘是后续章节预告，不提前讲继承细节。资料缺失、始皇不自动知道张良身份和政策不可单因归结的说明均移至supplements及校核文档，不作为必读叙述。",
+      "supplementTitles": [
+        "两篇史记怎样合读",
+        "副车与没有写明的细节",
+        "这次袭击能解释什么"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "draft-bolangsha-qin-unification",
+      "title": "史记·秦始皇本纪",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/w/index.php?title=史記/卷006&oldid=7907969",
+      "location": {
+        "startText": "二十六年，齊王建",
+        "endText": "虜其王，平齊地"
+      },
+      "excerpt": "二十六年，齊王建與其相后勝發兵守其西界，不通秦。秦使將軍王賁從燕南攻齊，得齊王建。",
+      "excerptCheckedAt": "2026-10-28",
+      "published": false,
+      "roleVisible": false,
+      "sceneIds": [],
+      "note": "背景定位；与紧接“秦王初并天下”段合读，不以单一秦王诏书的颂功口吻作中立评价。",
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -221,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ]
+    },
+    {
+      "id": "draft-bolangsha-qin-tour28",
+      "title": "史记·秦始皇本纪",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/w/index.php?title=史記/卷006&oldid=7907969",
+      "location": {
+        "startText": "二十八年，始皇東行郡縣",
+        "endText": "議封禪望祭山川之事"
+      },
+      "excerpt": "二十八年，始皇東行郡縣，上鄒嶧山。立石，與魯諸儒生議，刻石頌秦德，議封禪望祭山川之事。",
+      "excerptCheckedAt": "2026-10-28",
+      "published": false,
+      "roleVisible": false,
+      "sceneIds": [],
+      "note": "证明前一年巡行与刻石；碑文为秦廷功德宣告，不据其宣称断言社会已无反抗。",
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -219,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ]
+    },
+    {
+      "id": "draft-bolangsha-liuhou-background",
+      "title": "史记·留侯世家",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/w/index.php?title=史記/卷055&oldid=2666612",
+      "location": {
+        "startText": "留侯張良者，其先韓人也",
+        "endText": "以大父、父五世相韓故"
+      },
+      "excerpt": "留侯張良者，其先韓人也。大父開地，相韓昭侯、宣惠王、襄哀王。父平，相釐王、悼惠王。悼惠王二十三年，平卒。卒二十歲，秦滅韓。良年少，未宦事韓。韓破，良家僮三百人，弟死不葬，悉以家財求客刺秦王，為韓報仇，以大父、父五世相韓故。",
+      "excerptCheckedAt": "2026-10-28",
+      "published": false,
+      "roleVisible": false,
+      "sceneIds": [],
+      "note": "完整连续原文；“祖父、父亲辅佐韩国多位君主”“张良未仕韩”“家财求客报仇”均在此段。正文不增补张良准确年龄，不把传记动机写成独立证实的心理实录。",
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -230,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ]
+    },
+    {
+      "id": "draft-bolangsha-liuhou-attack",
+      "title": "史记·留侯世家",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/w/index.php?title=史記/卷055&oldid=2666612",
+      "location": {
+        "startText": "良嘗學禮淮陽",
+        "endText": "誤中副車"
+      },
+      "excerpt": "良嘗學禮淮陽。東見倉海君。得力士，為鐵椎重百二十斤。秦皇帝東游，良與客狙擊秦皇帝博浪沙中，誤中副車。",
+      "excerptCheckedAt": "2026-10-28",
+      "published": false,
+      "roleVisible": false,
+      "sceneIds": [],
+      "note": "“仓/沧海君”统一现代正文用沧海君；不换算一百二十斤为现代重量，不补造力士姓名或车队次序。",
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "张良",
+        "力士",
+        "铁椎",
+        "副车",
+        "博浪沙"
+      ]
+    },
+    {
+      "id": "draft-bolangsha-qin-search",
+      "title": "史记·秦始皇本纪",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/w/index.php?title=史記/卷006&oldid=7907969",
+      "location": {
+        "startText": "二十九年，始皇東游",
+        "endText": "乃令天下大索十日"
+      },
+      "excerpt": "二十九年，始皇東游。至陽武博狼沙中，為盜所驚。求弗得，乃令天下大索十日。",
+      "excerptCheckedAt": "2026-10-28",
+      "published": false,
+      "roleVisible": false,
+      "sceneIds": [],
+      "note": "本纪作“博狼沙”，正文采用常见“博浪沙”；不能把未遂袭击误写成皇帝中椎、重伤，也不能由“为盗所惊”推定皇帝知张良身份。",
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "博浪沙",
+        "博狼沙",
+        "遇袭",
+        "搜捕",
+        "大索",
+        "十日"
+      ]
+    },
+    {
+      "id": "draft-bolangsha-liuhou-escape",
+      "title": "史记·留侯世家",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/w/index.php?title=史記/卷055&oldid=2666612",
+      "location": {
+        "startText": "秦皇帝大怒",
+        "endText": "亡匿下邳"
+      },
+      "excerpt": "秦皇帝大怒，大索天下，求賊甚急，為張良故也。良乃更名姓，亡匿下邳。",
+      "excerptCheckedAt": "2026-10-28",
+      "published": false,
+      "roleVisible": false,
+      "sceneIds": [],
+      "note": "“为张良故也”是传记作者解释搜捕缘起，不足以证明皇帝当场已获知姓名或动机；下邳藏身属读者线索。",
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ]
+    },
+    {
+      "id": "draft-bolangsha-qin-continue",
+      "title": "史记·秦始皇本纪",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/w/index.php?title=史記/卷006&oldid=7907969",
+      "location": {
+        "startText": "登之罘，刻石",
+        "endText": "登之罘，刻石"
+      },
+      "excerpt": "登之罘，刻石。",
+      "excerptCheckedAt": "2026-10-28",
+      "published": false,
+      "roleVisible": false,
+      "sceneIds": [],
+      "note": "二十九年遇袭条后紧接的登之罘记载，之后为两篇刻石文；不提前授予即时角色。",
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ]
+    },
+    {
+      "id": "draft-bolangsha-qin-return",
+      "title": "史记·秦始皇本纪",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/w/index.php?title=史記/卷006&oldid=7907969",
+      "location": {
+        "startText": "旋，遂之瑯邪",
+        "endText": "道上黨入"
+      },
+      "excerpt": "旋，遂之瑯邪，道上黨入。",
+      "excerptCheckedAt": "2026-10-28",
+      "published": false,
+      "roleVisible": false,
+      "sceneIds": [],
+      "note": "二十九年两篇之罘刻石文之后的行程收束。",
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ]
+    },
+    {
+      "id": "draft-bolangsha-tongjian-date",
+      "title": "资治通鉴·秦纪二",
+      "author": "司马光",
+      "url": "https://zh.wikisource.org/w/index.php?title=資治通鑑/卷007&oldid=1249886",
+      "location": {
+        "startText": "始皇帝二十九年（癸未，西元前二一八年）",
+        "endText": "2　始皇遂登之罘，刻石；旋，之琅邪，道上黨入。"
+      },
+      "excerpt": "始皇東遊，至陽武博浪沙中，張良令力士操鐵椎狙擊始皇，誤中副車。始皇驚，求，弗得；令天下大索十日。",
+      "excerptCheckedAt": "2026-10-28",
+      "published": false,
+      "roleVisible": false,
+      "sceneIds": [],
+      "note": "用在线本的二十九年公历标题校核前218；通鉴为后出编年整理，不算与史记完全独立的现场证据。",
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ]
+    }
+  ],
+  "sceneDraft": {
+    "id": "yingzheng-c",
+    "status": "draft",
+    "reviewStatus": "pending",
+    "identity": "秦始皇",
+    "selfAddress": "朕",
+    "year": -218,
+    "momentId": "bolangsha",
+    "momentLabel": "博浪沙遇袭之后，搜捕令已下",
+    "timeBoundary": "为避免同年未来信息混入，暂定在遇袭、初步追查未获并下搜捕令之后，继续东巡之前；此为服务时点切片，不声称复原确切时辰。",
+    "knownFactsCandidate": [
+      "自己仍存活，东巡途中在阳武博浪沙遭到针对车驾的袭击。",
+      "眼下追查尚未抓到袭击者，自己已下达搜捕令。",
+      "统一已经完成，自己身份是皇帝；此前的巡游和刻石属于过去经历。"
+    ],
+    "readerOnly": [
+      "张良姓名、韩国世家背景与复仇动机。",
+      "沧海君及力士安排，铁椎的制作细节、准确重量。",
+      "张良改名匿下邳；继续东巡之后的具体行程。"
+    ],
+    "notAutomaticallyKnown": [
+      "袭击者姓名、幕后主使、逃亡地点。",
+      "未公开私聊或作者全局设定。",
+      "搜捕令十日期限已执行完毕的结果。"
+    ],
+    "roleSourcesCandidate": [
+      "draft-bolangsha-qin-search"
+    ],
+    "notEvidence": [
+      "不能由副车被击推定皇帝受伤、毫发无伤的医学状态或有人死亡。",
+      "不把未来沙丘、继承斗争、秦末起义当成亲历或确定结果。"
+    ],
+    "openChecks": [
+      "精确确定角色切片与相关资料片段，防止同年后续行程提前进入上下文。",
+      "问“幕后是不是张良”“刺客逃到哪”时应说明尚未确认；用户主动告知只作为收到的说法。",
+      "讨论心理和假设查验时不把创作附上历史原文背书。",
+      "与A/B不自动共享记忆；显式兼容续接才继承本人可知交流，仍不授予读者线索。"
+    ]
+  },
+  "releaseBlockers": [
+    "本文件未合并catalog、未入公开接口；正文与场景均待父agent复核。",
+    "精确原文摘录与对应关系已初核，但角色C资料切片、检索词与真实多轮验收尚未完成。",
+    "现代地理定位、铁椎现代重量、车队编制、力士姓名、伤亡等未核实内容不进入正文。"
+  ]
+}

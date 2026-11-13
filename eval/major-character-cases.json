@@ -1,0 +1,450 @@
+{
+  "version": 1,
+  "title": "前三章主要人物补齐：9位新增人物与共用状态隔离",
+  "priorityCaseIds": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D07",
+    "D08",
+    "D09",
+    "D10",
+    "D11"
+  ],
+  "cases": [
+    {
+      "id": "D01",
+      "title": "樊於期：身份、经历与知识边界",
+      "manualReview": [
+        "当前为樊於期，身份逃亡秦将、自称及所在时点准确；不能自动知道未来、秘密或他人私聊。",
+        "首问以真实片段支持可讲的经历；心理与推测不伪装成原文，动作/情绪先一段、台词在下。",
+        "追问的未来或未证实说法只当输入，不更改正式剧情；缺少实名/年龄/背景时不编造、不假装失忆。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "actor",
+          "chapterId": "jingke",
+          "sceneId": "fanyuqi-private",
+          "expect": {
+            "session": {
+              "identity": "逃亡秦将"
+            }
+          }
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "你为何来到燕国？荆轲刚向你提出什么，你眼下已经作了决定吗？"
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "如果不接受这个提议，先活着再想别的办法，你会怎样权衡？只是讨论，尚未采用。",
+          "expect": {
+            "unchanged": [
+              "conditions",
+              "events",
+              "characterStatus"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "title": "秦舞阳：身份、经历与知识边界",
+      "manualReview": [
+        "当前为秦舞阳，身份燕使副手、自称及所在时点准确；不能自动知道未来、秘密或他人私聊。",
+        "首问以真实片段支持可讲的经历；心理与推测不伪装成原文，动作/情绪先一段、台词在下。",
+        "追问的未来或未证实说法只当输入，不更改正式剧情；缺少实名/年龄/背景时不编造、不假装失忆。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "actor",
+          "chapterId": "jingke",
+          "sceneId": "qinwuyang-before",
+          "expect": {
+            "session": {
+              "identity": "燕使副手"
+            }
+          }
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "你现在随荆轲做什么，手里拿着什么？走到殿阶时为何紧张？此刻还是十三岁吗？"
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "有人告诉你这次行刺已经失败，荆轲死了。你此刻亲眼看见了吗？不要把这句转述当成已发生。",
+          "expect": {
+            "unchanged": [
+              "conditions",
+              "events",
+              "characterStatus"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "title": "燕王喜：身份、经历与知识边界",
+      "manualReview": [
+        "当前为燕王喜，身份燕王、自称及所在时点准确；不能自动知道未来、秘密或他人私聊。",
+        "首问以真实片段支持可讲的经历；心理与推测不伪装成原文，动作/情绪先一段、台词在下。",
+        "追问的未来或未证实说法只当输入，不更改正式剧情；缺少实名/年龄/背景时不编造、不假装失忆。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "actor",
+          "chapterId": "jingke",
+          "sceneId": "yanwangxi-retreat",
+          "expect": {
+            "session": {
+              "identity": "燕王"
+            }
+          }
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "你眼下在哪里，燕都与太子丹是什么处境？你已经决定处死太子了吗？"
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "如果秦最终灭燕，你会怎样看现在的退守？只是访客带来的未来设想。",
+          "expect": {
+            "unchanged": [
+              "conditions",
+              "events",
+              "characterStatus"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "title": "李信：身份、经历与知识边界",
+      "manualReview": [
+        "当前为李信，身份秦将、自称及所在时点准确；不能自动知道未来、秘密或他人私聊。",
+        "首问以真实片段支持可讲的经历；心理与推测不伪装成原文，动作/情绪先一段、台词在下。",
+        "追问的未来或未证实说法只当输入，不更改正式剧情；缺少实名/年龄/背景时不编造、不假装失忆。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "actor",
+          "chapterId": "unification",
+          "sceneId": "lixin-defeat",
+          "expect": {
+            "session": {
+              "identity": "秦将"
+            }
+          }
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "你当初主张用多少兵伐楚？这次怎样败退？请讲亲历，再区分个人判断。"
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "听说王翦后来平定楚国，秦王称了皇帝。你此刻已经见过这些事吗？",
+          "expect": {
+            "unchanged": [
+              "conditions",
+              "events",
+              "characterStatus"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "D05",
+      "title": "齐王建：身份、经历与知识边界",
+      "manualReview": [
+        "当前为齐王建，身份齐王、自称及所在时点准确；不能自动知道未来、秘密或他人私聊。",
+        "首问以真实片段支持可讲的经历；心理与推测不伪装成原文，动作/情绪先一段、台词在下。",
+        "追问的未来或未证实说法只当输入，不更改正式剧情；缺少实名/年龄/背景时不编造、不假装失忆。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "actor",
+          "chapterId": "unification",
+          "sceneId": "qiwangjian-before",
+          "expect": {
+            "session": {
+              "identity": "齐王"
+            }
+          }
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "秦兵已经攻来，你怎样看齐国此前多年未受兵的局面与眼下的选择？"
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "有人声称后胜暗收秦金，你自己已经查明了吗？我没有出示证据。",
+          "expect": {
+            "unchanged": [
+              "conditions",
+              "events",
+              "characterStatus"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "D06",
+      "title": "王贲：身份、经历与知识边界",
+      "manualReview": [
+        "当前为王贲，身份秦将、自称及所在时点准确；不能自动知道未来、秘密或他人私聊。",
+        "首问以真实片段支持可讲的经历；心理与推测不伪装成原文，动作/情绪先一段、台词在下。",
+        "追问的未来或未证实说法只当输入，不更改正式剧情；缺少实名/年龄/背景时不编造、不假装失忆。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "actor",
+          "chapterId": "unification",
+          "sceneId": "wangben-unified",
+          "expect": {
+            "session": {
+              "identity": "秦将"
+            }
+          }
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "你与王翦是什么关系？攻齐这一步，你亲自做了什么？别把父亲征楚的指挥说成自己的。"
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "如果后来秦国陷入动荡，你能断言王离的命运吗？只是未来设想。",
+          "expect": {
+            "unchanged": [
+              "conditions",
+              "events",
+              "characterStatus"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "D07",
+      "title": "张良：身份、经历与知识边界",
+      "manualReview": [
+        "当前为张良，身份韩人、行刺筹划者、自称及所在时点准确；不能自动知道未来、秘密或他人私聊。",
+        "首问以真实片段支持可讲的经历；心理与推测不伪装成原文，动作/情绪先一段、台词在下。",
+        "追问的未来或未证实说法只当输入，不更改正式剧情；缺少实名/年龄/背景时不编造、不假装失忆。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "actor",
+          "chapterId": "bolangsha",
+          "sceneId": "zhangliang-escape",
+          "expect": {
+            "session": {
+              "identity": "韩人、行刺筹划者"
+            }
+          }
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "你为什么安排博浪沙行动，结果怎样，自己现在是什么处境？你此时已经是留侯了吗？"
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "我听说皇帝已知道你的姓名和藏身地，也许他还与你谈过。你能确认这种说法吗？",
+          "expect": {
+            "unchanged": [
+              "conditions",
+              "events",
+              "characterStatus"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "D08",
+      "title": "沧海君：身份、经历与知识边界",
+      "manualReview": [
+        "当前为沧海君，身份与张良相见的援助者、自称及所在时点准确；不能自动知道未来、秘密或他人私聊。",
+        "首问以真实片段支持可讲的经历；心理与推测不伪装成原文，动作/情绪先一段、台词在下。",
+        "追问的未来或未证实说法只当输入，不更改正式剧情；缺少实名/年龄/背景时不编造、不假装失忆。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "actor",
+          "chapterId": "bolangsha",
+          "sceneId": "canghaijun-plan",
+          "expect": {
+            "session": {
+              "identity": "与张良相见的援助者"
+            }
+          }
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "你与张良相见时，筹备走到了哪一步？你已经知道行刺结果了吗？"
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "你的真实姓名、国籍和官爵有确切依据吗？是否就是海东国王？别用编造身世填补空白。",
+          "expect": {
+            "unchanged": [
+              "conditions",
+              "events",
+              "characterStatus"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "D09",
+      "title": "行刺力士：身份、经历与知识边界",
+      "manualReview": [
+        "当前为行刺力士，身份参与袭击的力士、自称及所在时点准确；不能自动知道未来、秘密或他人私聊。",
+        "首问以真实片段支持可讲的经历；心理与推测不伪装成原文，动作/情绪先一段、台词在下。",
+        "追问的未来或未证实说法只当输入，不更改正式剧情；缺少实名/年龄/背景时不编造、不假装失忆。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "actor",
+          "chapterId": "bolangsha",
+          "sceneId": "bolangshi-before",
+          "expect": {
+            "session": {
+              "identity": "参与袭击的力士"
+            }
+          }
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "你眼下准备做什么，器物是什么？行动已经出手了吗？"
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "你真实姓名就是朱亥吗？听说你已误中副车，你在当前时点能确认这个结果吗？",
+          "expect": {
+            "unchanged": [
+              "conditions",
+              "events",
+              "characterStatus"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "D10",
+      "title": "新增力士的身体状态与游客隔离",
+      "manualReview": [
+        "濒死仍存活，以声音和气息承接，不凭标量伤势新造部位。",
+        "另开沧海君不会共享伤情；陌生游客不能访问同一记录。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "actor",
+          "chapterId": "bolangsha",
+          "sceneId": "bolangshi-before"
+        },
+        {
+          "action": "adopt",
+          "on": "actor",
+          "condition": {
+            "type": "character_status",
+            "characterId": "bolangshi",
+            "status": "critical",
+            "text": "本段剧情明确采用：行刺力士处于濒死状态，但尚未死亡。"
+          }
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "你现在声音微弱，想先说什么？",
+          "expect": {
+            "session": {
+              "characterStatus.condition": "critical",
+              "mode": "hypothetical"
+            }
+          }
+        },
+        {
+          "action": "denyAccess",
+          "on": "actor",
+          "visitor": "other",
+          "operation": "read"
+        },
+        {
+          "action": "open",
+          "as": "other_actor",
+          "chapterId": "bolangsha",
+          "sceneId": "canghaijun-plan"
+        },
+        {
+          "action": "inspect",
+          "on": "other_actor",
+          "expect": {
+            "session": {
+              "characterStatus.condition": "normal",
+              "mode": "historical"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "D11",
+      "title": "沧海君的非精确纪年",
+      "manualReview": [
+        "年字段是服务锚点，不当作史料精确纪年。",
+        "不虚构相见月日或把统一前后强行定论；可讨论当前筹备。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "actor",
+          "chapterId": "bolangsha",
+          "sceneId": "canghaijun-plan"
+        },
+        {
+          "action": "chat",
+          "on": "actor",
+          "text": "你与张良的这次会面能确定是前218年的哪月哪日吗？此时六国一定已经统一了吗？请别把导航年份当成史料。"
+        }
+      ]
+    }
+  ]
+}

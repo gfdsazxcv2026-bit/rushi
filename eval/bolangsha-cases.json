@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "title": "第三章博浪沙：C场景逐项验收",
+  "priorityCaseIds": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06"
+  ],
+  "cases": [
+    {
+      "id": "D01",
+      "title": "C身份、现场与搜捕令",
+      "manualReview": [
+        "秦始皇自称朕，属于前218年博浪沙遇袭之后。",
+        "确认初查未获、搜捕令刚下，不提前声称十日执行完毕；现场与命令有原文对应，心理不借引文背书。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "king",
+          "chapterId": "bolangsha",
+          "sceneId": "yingzheng-c"
+        },
+        {
+          "action": "chat",
+          "on": "king",
+          "text": "陛下，刚才博浪沙发生了什么？你已经确认哪些事，搜捕现在有什么结果？",
+          "expect": {
+            "citationsMin": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "title": "未知幕后与用户告知",
+      "manualReview": [
+        "未获报告时不得自动确认张良、沧海君或下邳，不因读者正文有这些信息就预知。",
+        "接到张良/下邳说法只作为待核实消息，不回填为本人早已查明；允许自然追问。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "king",
+          "chapterId": "bolangsha",
+          "sceneId": "yingzheng-c"
+        },
+        {
+          "action": "chat",
+          "on": "king",
+          "text": "你知道袭击者叫什么、为何而来，现在躲在哪里吗？"
+        },
+        {
+          "action": "chat",
+          "on": "king",
+          "text": "我听说是韩国人张良安排的，现在藏在下邳。这只是我的说法，没有证据。你会怎样判断？"
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "title": "未来信息与政策因果边界",
+      "manualReview": [
+        "沙丘与秦亡属于未来，不能以已发生口吻回忆自己身后结果；用户提供的未来条件可以讨论。",
+        "不能把后来的所有政策和秦亡归因于一次博浪沙袭击，不因正常讨论政治伦理而拒绝交流。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "king",
+          "chapterId": "bolangsha",
+          "sceneId": "yingzheng-c"
+        },
+        {
+          "action": "chat",
+          "on": "king",
+          "text": "我假设数年后你在沙丘去世，继承出现争夺。能否说这次博浪沙遇袭就决定了后来一切政策和秦的灭亡？只是讨论，并未采用。",
+          "expect": {
+            "unchanged": [
+              "conditions",
+              "events",
+              "characterStatus"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "title": "濒死、交代与救援连续性",
+      "manualReview": [
+        "采用濒死但尚存活后，动作和气息微弱，实际说出交代，不只回复还能说话。",
+        "明确获救恢复后承接新状态，不能继续濒死，不能额外确认袭击者或虚构抢救史实。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "king",
+          "chapterId": "bolangsha",
+          "sceneId": "yingzheng-c"
+        },
+        {
+          "action": "adopt",
+          "on": "king",
+          "condition": {
+            "text": "本段剧情明确设定嬴政处于濒死状态，但尚未死亡。",
+            "type": "character_status",
+            "characterId": "yingzheng",
+            "status": "critical"
+          }
+        },
+        {
+          "action": "chat",
+          "on": "king",
+          "text": "此刻你气息微弱，还想留下什么话？",
+          "expect": {
+            "session": {
+              "characterStatus.condition": "critical",
+              "mode": "hypothetical"
+            }
+          }
+        },
+        {
+          "action": "adopt",
+          "on": "king",
+          "condition": {
+            "text": "本段剧情明确设定嬴政已获救，身体恢复正常。",
+            "type": "character_status",
+            "characterId": "yingzheng",
+            "status": "normal"
+          }
+        },
+        {
+          "action": "chat",
+          "on": "king",
+          "text": "现在你已经获救并恢复，接下来最想先处理什么？",
+          "expect": {
+            "session": {
+              "characterStatus.condition": "normal",
+              "mode": "hypothetical"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "D05",
+      "title": "假设讨论与明确采用分开",
+      "manualReview": [
+        "普通如果可直接推演，不能自动写成袭击者已经被捕。",
+        "明确采用抓获但身份未明后，应承接该条件；可提出先询问什么，不能把尚未回答的审问内容当成已经确认的供词。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "king",
+          "chapterId": "bolangsha",
+          "sceneId": "yingzheng-c"
+        },
+        {
+          "action": "chat",
+          "on": "king",
+          "text": "如果袭击者当场被捕，你会先问什么？先讨论，不实际改动。",
+          "expect": {
+            "unchanged": [
+              "conditions",
+              "events",
+              "characterStatus"
+            ]
+          }
+        },
+        {
+          "action": "adopt",
+          "on": "king",
+          "condition": {
+            "type": "custom",
+            "text": "本段剧情明确采用：袭击者已经被捕，但身份、主使与动机仍未查明；嬴政已亲眼看见此人被带到面前。",
+            "knownToCurrent": true
+          }
+        },
+        {
+          "action": "chat",
+          "on": "king",
+          "text": "现在此人已被带到面前，你先对他说哪一句话？",
+          "expect": {
+            "session": {
+              "mode": "hypothetical"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "D06",
+      "title": "B到C显式续接与游客隔离",
+      "manualReview": [
+        "跨年时仍濒死必须先阻止续接；来源明确获救后才能继续，不自行跳过数年恢复。",
+        "B到C必须明确续接；独立C健康开始，另一游客无读取或继承权限。"
+      ],
+      "steps": [
+        {
+          "action": "open",
+          "as": "king",
+          "chapterId": "unification",
+          "sceneId": "yingzheng-b"
+        },
+        {
+          "action": "adopt",
+          "on": "king",
+          "condition": {
+            "text": "本段剧情明确设定嬴政处于濒死状态，但尚未死亡。",
+            "type": "character_status",
+            "characterId": "yingzheng",
+            "status": "critical"
+          }
+        },
+        {
+          "action": "continue",
+          "from": "king",
+          "as": "later",
+          "chapterId": "bolangsha",
+          "sceneId": "yingzheng-c",
+          "expect": {
+            "status": 409,
+            "errorCode": "SCENE_CONFLICT"
+          }
+        },
+        {
+          "action": "adopt",
+          "on": "king",
+          "condition": {
+            "type": "character_status",
+            "characterId": "yingzheng",
+            "status": "normal",
+            "text": "本段剧情明确采用嬴政已经获救并恢复正常。"
+          }
+        },
+        {
+          "action": "continue",
+          "from": "king",
+          "as": "recovered",
+          "chapterId": "bolangsha",
+          "sceneId": "yingzheng-c",
+          "expect": {
+            "session": {
+              "characterStatus.condition": "normal",
+              "mode": "hypothetical"
+            }
+          }
+        },
+        {
+          "action": "chat",
+          "on": "recovered",
+          "text": "从先前的处境走到此刻，眼下身体如何？请先顾眼前，不补写这几年没谈过的事。"
+        },
+        {
+          "action": "denyAccess",
+          "on": "recovered",
+          "visitor": "other",
+          "operation": "read"
+        },
+        {
+          "action": "denyAccess",
+          "on": "recovered",
+          "visitor": "other",
+          "operation": "inherit"
+        },
+        {
+          "action": "open",
+          "as": "fresh",
+          "chapterId": "bolangsha",
+          "sceneId": "yingzheng-c"
+        },
+        {
+          "action": "inspect",
+          "on": "fresh",
+          "expect": {
+            "session": {
+              "characterStatus.condition": "normal",
+              "mode": "historical"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

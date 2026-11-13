@@ -1,0 +1,907 @@
+{
+  "schemaVersion": 1,
+  "draftOnly": false,
+  "checkedAt": "2026-10-30",
+  "chapter": {
+    "id": "bolangsha",
+    "order": 3,
+    "title": "巡游遇刺——博浪沙的袭击",
+    "subtitle": "一击未中，车驾与追捕继续",
+    "eraLabel": "秦朝 · 统一之后",
+    "timeLabel": "前218年 · 秦始皇二十九年",
+    "eventYear": -218,
+    "status": "published",
+    "version": "1.1.0",
+    "reviewStatus": "checked",
+    "summary": "一次误中副车的袭击，把统一后的巡游与亡国者的反抗连接起来。",
+    "paragraphs": [
+      "铁椎击中了车驾，却没有击中秦始皇。《史记·留侯世家》写，这场袭击误中了副车。地点是阳武的博浪沙。一次冲着皇帝而来的行刺，没能取走他的性命，紧随而来的是搜捕。",
+      "这时是前218年，秦始皇二十九年，六国已经归秦。皇帝再次东巡。此前一年，他曾登山、刻石，让沿途看到新王朝对功业与秩序的宣告。如今行经博浪沙，一次针对皇帝本人的袭击，打断了这段行程。",
+      "袭击的安排者是张良。按《留侯世家》的叙述，他出身韩国世家，祖父和父亲曾相继辅佐韩国多位君主。韩国被秦消灭时，张良还没有做官。他拿出家财寻找能刺杀秦王的人，要为韩国报仇。六国归于一统之后，这项谋划仍在继续，目标也从秦王变成了秦始皇。",
+      "张良后来求助于沧海君，找到了力士，准备了铁椎。秦始皇东游，给这场谋划带来了出手的机会。张良与同伴在博浪沙发动袭击；铁椎命中车驾，击中的却是副车。皇帝没有被杀，拿出家财筹备的行动就此落空。",
+      "秦始皇发起追查，却没能抓到袭击者，随即下令天下大搜十日。张良则改换姓名，逃往下邳藏身。寻找刺客、筹备行刺的阶段结束了，张良自己成了需要躲避追捕的人。一次袭击，没有推翻皇帝，也没有让报仇者就此落网。",
+      "东巡没有就此结束。《秦始皇本纪》接着记载，始皇登之罘刻石，又前往琅邪，最后取道上党返回。皇帝继续以巡行和刻石宣告自己的功业，张良则在下邳隐姓藏身。两人的去路，由博浪沙的一次袭击，转入了巡游与逃亡。",
+      "博浪沙之后，故事还将走过数年。下一章，叙事将转向沙丘，走进皇帝身后的继承与权力争夺。"
+    ],
+    "sourceIds": [
+      "bolangsha-qin-unification",
+      "bolangsha-qin-tour28",
+      "bolangsha-liuhou-background",
+      "bolangsha-liuhou-attack",
+      "bolangsha-qin-search",
+      "bolangsha-liuhou-escape",
+      "bolangsha-qin-continue",
+      "bolangsha-qin-return",
+      "bolangsha-tongjian-date",
+      "bolangsha-carriage",
+      "unification-title",
+      "zhangliang-hide",
+      "canghaijun-meeting",
+      "bolangshi-preparation"
+    ],
+    "supplements": [
+      {
+        "title": "本章主要人物与对话时点",
+        "body": "嬴政：前218年 · 初查未获，搜捕令已下；张良：前218年 · 逃匿下邳，尚未遇圯上老人；沧海君：韩亡后、袭击前 · 确切年月与会面地点不详；行刺力士：前218年行动前 · 具体地点与时刻不详。选人卡片会提示阶段变化，换时点独立开始或恢复，不自动共享私聊。匿名人物不编造实名，尚不清楚的背景在资料说明中注明。"
+      },
+      {
+        "title": "两篇史记怎样合读",
+        "body": "本纪记录二十九年行程、遇袭及搜捕；留侯世家补充张良背景、铁椎、副车与逃匿。两篇同属史记，不能当作互相独立的现场证词；通鉴是后出编年整理。读者可合读两线，但不能据此认定始皇当场已知道幕后姓名、动机或张良的逃亡地点。"
+      },
+      {
+        "title": "副车与没有写明的细节",
+        "body": "副车指车驾中的非皇帝所乘车辆。本章采用的段落没有交代完整的车队排列、辨认目标的方法、力士姓名、同伴人数和车内伤亡；这些缺失不补成史实，也不等于断言全部古籍都没有记载。"
+      },
+      {
+        "title": "这次袭击能解释什么",
+        "body": "可以说明一次针对皇帝的未遂袭击与紧随的搜捕，不能单凭此事解释后续所有制度、巡游或秦朝灭亡。正文呈现行动和结果；制度变化与人物心理如果缺少直接依据，另作推断或创作标明。"
+      }
+    ],
+    "nextId": "shaqiu",
+    "majorCharacterIds": [
+      "yingzheng",
+      "zhangliang",
+      "canghaijun",
+      "bolangshi"
+    ]
+  },
+  "bodyHanCharacters": 538,
+  "claims": [
+    {
+      "id": "BS-F01",
+      "paragraphs": [
+        1,
+        2,
+        4
+      ],
+      "statement": "秦始皇二十九年东巡，在阳武博浪沙遭袭；通行纪年为前218年。",
+      "sourceIds": [
+        "bolangsha-qin-search",
+        "bolangsha-tongjian-date"
+      ],
+      "treatment": "纪年和发生地点有明确定位；不补精确袭击日或现代遗址坐标。"
+    },
+    {
+      "id": "BS-F02",
+      "paragraphs": [
+        2
+      ],
+      "statement": "此次遇袭在统一之后，前一年已经东巡、刻石颂秦德。",
+      "sourceIds": [
+        "bolangsha-qin-unification",
+        "bolangsha-qin-tour28"
+      ],
+      "treatment": "“让沿途看到新王朝宣告”为对刻石活动功能的概述；不把功德碑文作为无反抗的事实证明。"
+    },
+    {
+      "id": "BS-F03",
+      "paragraphs": [
+        3
+      ],
+      "statement": "张良出身韩国世家，秦灭韩时未仕韩，以家财求客报韩仇。",
+      "sourceIds": [
+        "bolangsha-liuhou-background"
+      ],
+      "treatment": "按留侯世家叙述呈现，“祖父父亲相继辅佐多位君主”见定位整段；“目标从秦王变成秦始皇”连接灭韩后求刺与统一后东巡的时间关系，不新增人物心理实录。"
+    },
+    {
+      "id": "BS-F04",
+      "paragraphs": [
+        1,
+        4
+      ],
+      "statement": "张良求助沧海君，得力士、备铁椎，随东巡机会袭击，误中副车。",
+      "sourceIds": [
+        "bolangsha-liuhou-attack",
+        "bolangsha-tongjian-date"
+      ],
+      "treatment": "本纪不详述，正文明确给留侯世家归属；攻击姿势、车队编制、力士姓名不补写。"
+    },
+    {
+      "id": "BS-F05",
+      "paragraphs": [
+        1,
+        5
+      ],
+      "statement": "始皇追查未获，下令天下大索十日。",
+      "sourceIds": [
+        "bolangsha-qin-search"
+      ],
+      "treatment": "十日是命令期限，不写成已经执行完整十日或全国每户搜查效果已知。"
+    },
+    {
+      "id": "BS-F06",
+      "paragraphs": [
+        5,
+        6
+      ],
+      "statement": "张良更换姓名，逃匿下邳。",
+      "sourceIds": [
+        "bolangsha-liuhou-escape"
+      ],
+      "treatment": "属于读者可见的后续去向，不成为当场始皇的自动知情。"
+    },
+    {
+      "id": "BS-F07",
+      "paragraphs": [
+        6
+      ],
+      "statement": "始皇遇袭后仍登之罘刻石，赴琅邪，由上党归。",
+      "sourceIds": [
+        "bolangsha-qin-continue",
+        "bolangsha-qin-return",
+        "bolangsha-tongjian-date"
+      ],
+      "treatment": "顺序取自本纪；不把后来的沿途事实提前进入角色C即时场景。"
+    },
+    {
+      "id": "BS-B01",
+      "paragraphs": [
+        6,
+        7
+      ],
+      "statement": "事件连接、章节承接与补充区的资料/因果边界。",
+      "sourceIds": [
+        "bolangsha-liuhou-attack",
+        "bolangsha-liuhou-escape",
+        "bolangsha-qin-search",
+        "bolangsha-qin-continue",
+        "bolangsha-qin-return"
+      ],
+      "treatment": "正文仅连接行刺落空、搜捕、逃匿与继续巡游；末段沙丘是后续章节预告，不提前讲继承细节。资料缺失、始皇不自动知道张良身份和政策不可单因归结的说明均移至supplements及校核文档，不作为必读叙述。",
+      "supplementTitles": [
+        "两篇史记怎样合读",
+        "副车与没有写明的细节",
+        "这次袭击能解释什么"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "unification-title",
+      "title": "史记·秦始皇本纪",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/wiki/史記/卷006#始皇帝",
+      "location": "卷六，二十六年，起句“秦王初并天下”之议帝号段",
+      "excerpt": "去『泰』，著『皇』，采上古『帝』位號，號曰『皇帝』；他如議。",
+      "chapterIds": [
+        "unification",
+        "bolangsha"
+      ],
+      "sceneIds": [
+        "yingzheng-b",
+        "lisi-b",
+        "wangjian-b",
+        "yingzheng-c"
+      ],
+      "eventYear": -221,
+      "keywords": [
+        "皇帝",
+        "帝号",
+        "始皇帝",
+        "称号",
+        "朕",
+        "秦王",
+        "统一"
+      ],
+      "published": true,
+      "roleVisible": true,
+      "excerptCheckedAt": "2026-10-26",
+      "excerptNote": "所列在线原文中的连续摘录；未补写原文标点或叙述。",
+      "auditedStatements": [
+        {
+          "characterIds": [
+            "yingzheng",
+            "lisi",
+            "wangjian"
+          ],
+          "text": "帝号去掉“泰”字，保留“皇”，取上古“帝”的位号，合称“皇帝”。"
+        }
+      ]
+    },
+    {
+      "id": "bolangsha-qin-unification",
+      "title": "史记·秦始皇本纪",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/wiki/史記/卷006",
+      "location": "卷六，二十六年；起“二十六年，齊王建”，止“得齊王建”。",
+      "excerpt": "二十六年，齊王建與其相后勝發兵守其西界，不通秦。秦使將軍王賁從燕南攻齊，得齊王建。",
+      "excerptCheckedAt": "2026-10-30",
+      "published": true,
+      "roleVisible": false,
+      "sceneIds": [],
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -221,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ],
+      "excerptNote": "背景定位；与紧接“秦王初并天下”段合读，不以单一秦王诏书的颂功口吻作中立评价。"
+    },
+    {
+      "id": "bolangsha-qin-tour28",
+      "title": "史记·秦始皇本纪",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/wiki/史記/卷006",
+      "location": "卷六，二十八年；起“二十八年，始皇東行郡縣”，止“議封禪望祭山川之事”。",
+      "excerpt": "二十八年，始皇東行郡縣，上鄒嶧山。立石，與魯諸儒生議，刻石頌秦德，議封禪望祭山川之事。",
+      "excerptCheckedAt": "2026-10-30",
+      "published": true,
+      "roleVisible": true,
+      "sceneIds": [
+        "yingzheng-c"
+      ],
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -219,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ],
+      "excerptNote": "证明前一年巡行与刻石；碑文为秦廷功德宣告，不据其宣称断言社会已无反抗。",
+      "auditedStatements": [
+        {
+          "characterIds": [
+            "yingzheng"
+          ],
+          "text": "此前二十八年，朕东行郡县，登邹峄山、立石颂秦德。"
+        }
+      ]
+    },
+    {
+      "id": "bolangsha-liuhou-background",
+      "title": "史记·留侯世家",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/wiki/史記/卷055",
+      "location": "卷五十五，张良首段；起“留侯張良者，其先韓人也”，止“以大父、父五世相韓故”。",
+      "excerpt": "留侯張良者，其先韓人也。大父開地，相韓昭侯、宣惠王、襄哀王。父平，相釐王、悼惠王。悼惠王二十三年，平卒。卒二十歲，秦滅韓。良年少，未宦事韓。韓破，良家僮三百人，弟死不葬，悉以家財求客刺秦王，為韓報仇，以大父、父五世相韓故。",
+      "excerptCheckedAt": "2026-10-30",
+      "published": true,
+      "roleVisible": true,
+      "sceneIds": [
+        "zhangliang-escape"
+      ],
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -230,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ],
+      "excerptNote": "完整连续原文；“祖父、父亲辅佐韩国多位君主”“张良未仕韩”“家财求客报仇”均在此段。正文不增补张良准确年龄，不把传记动机写成独立证实的心理实录。",
+      "auditedStatements": [
+        {
+          "characterIds": [
+            "zhangliang"
+          ],
+          "text": "我出身韩国世家，祖父与父亲曾相韩；韩亡时我尚未任官，后来以家财求客刺秦报韩仇。"
+        }
+      ]
+    },
+    {
+      "id": "bolangsha-liuhou-attack",
+      "title": "史记·留侯世家",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/wiki/史記/卷055",
+      "location": "卷五十五，张良段；起“良嘗學禮淮陽”，止“誤中副車”。",
+      "excerpt": "良嘗學禮淮陽。東見倉海君。得力士，為鐵椎重百二十斤。秦皇帝東游，良與客狙擊秦皇帝博浪沙中，誤中副車。",
+      "excerptCheckedAt": "2026-10-30",
+      "published": true,
+      "roleVisible": true,
+      "sceneIds": [
+        "zhangliang-escape"
+      ],
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "张良",
+        "力士",
+        "铁椎",
+        "副车",
+        "博浪沙"
+      ],
+      "excerptNote": "“仓/沧海君”统一现代正文用沧海君；不换算一百二十斤为现代重量，不补造力士姓名或车队次序。",
+      "auditedStatements": [
+        {
+          "characterIds": [
+            "zhangliang"
+          ],
+          "text": "我曾见沧海君、得到力士并准备铁椎；随后与同伴在博浪沙袭击皇帝，却误中副车。"
+        }
+      ]
+    },
+    {
+      "id": "bolangsha-qin-search",
+      "title": "史记·秦始皇本纪",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/wiki/史記/卷006",
+      "location": "卷六，二十九年；起“二十九年，始皇東游”，止“乃令天下大索十日”。",
+      "excerpt": "二十九年，始皇東游。至陽武博狼沙中，為盜所驚。求弗得，乃令天下大索十日。",
+      "excerptCheckedAt": "2026-10-30",
+      "published": true,
+      "roleVisible": true,
+      "sceneIds": [
+        "yingzheng-c"
+      ],
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "博浪沙",
+        "博狼沙",
+        "遇袭",
+        "搜捕",
+        "大索",
+        "十日"
+      ],
+      "excerptNote": "本纪作“博狼沙”，正文采用常见“博浪沙”；不能把未遂袭击误写成皇帝中椎、重伤，也不能由“为盗所惊”推定皇帝知张良身份。",
+      "auditedStatements": [
+        {
+          "characterIds": [
+            "yingzheng"
+          ],
+          "text": "此次东游行至阳武博浪沙，车驾遭袭；追查未获，朕已下令天下大索十日。"
+        }
+      ]
+    },
+    {
+      "id": "bolangsha-liuhou-escape",
+      "title": "史记·留侯世家",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/wiki/史記/卷055",
+      "location": "卷五十五，博浪沙段；起“秦皇帝大怒”，止“亡匿下邳”。",
+      "excerpt": "秦皇帝大怒，大索天下，求賊甚急，為張良故也。良乃更名姓，亡匿下邳。",
+      "excerptCheckedAt": "2026-10-30",
+      "published": true,
+      "roleVisible": false,
+      "sceneIds": [],
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ],
+      "excerptNote": "“为张良故也”是传记作者解释搜捕缘起，不足以证明皇帝当场已获知姓名或动机；下邳藏身属读者线索。"
+    },
+    {
+      "id": "bolangsha-qin-continue",
+      "title": "史记·秦始皇本纪",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/wiki/史記/卷006",
+      "location": "卷六，二十九年，博狼沙搜捕令之后：“登之罘，刻石。”",
+      "excerpt": "登之罘，刻石。",
+      "excerptCheckedAt": "2026-10-30",
+      "published": true,
+      "roleVisible": false,
+      "sceneIds": [],
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ],
+      "excerptNote": "二十九年遇袭条后紧接的登之罘记载，之后为两篇刻石文；不提前授予即时角色。"
+    },
+    {
+      "id": "bolangsha-qin-return",
+      "title": "史记·秦始皇本纪",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/wiki/史記/卷006",
+      "location": "卷六，二十九年，两篇之罘刻石文之后：“旋，遂之瑯邪，道上黨入。”",
+      "excerpt": "旋，遂之瑯邪，道上黨入。",
+      "excerptCheckedAt": "2026-10-30",
+      "published": true,
+      "roleVisible": false,
+      "sceneIds": [],
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ],
+      "excerptNote": "二十九年两篇之罘刻石文之后的行程收束。"
+    },
+    {
+      "id": "bolangsha-tongjian-date",
+      "title": "资治通鉴·秦纪二",
+      "author": "司马光",
+      "url": "https://zh.wikisource.org/wiki/資治通鑑/卷007",
+      "location": "卷七，始皇帝二十九年（癸未，西元前二一八年），第1条；起“始皇東遊”，止“令天下大索十日”。",
+      "excerpt": "始皇東遊，至陽武博浪沙中，張良令力士操鐵椎狙擊始皇，誤中副車。始皇驚，求，弗得；令天下大索十日。",
+      "excerptCheckedAt": "2026-10-30",
+      "published": true,
+      "roleVisible": false,
+      "sceneIds": [],
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "博浪沙",
+        "东巡"
+      ],
+      "excerptNote": "用在线本的二十九年公历标题校核前218；通鉴为后出编年整理，不算与史记完全独立的现场证据。"
+    },
+    {
+      "id": "bolangsha-carriage",
+      "title": "资治通鉴·秦纪二",
+      "author": "司马光",
+      "url": "https://zh.wikisource.org/wiki/資治通鑑/卷007",
+      "location": "卷七，始皇帝二十九年第1条；截取“力士操鐵椎狙擊始皇，誤中副車”。保留现场工具和命中结果，不取句前“張良令”。",
+      "excerpt": "力士操鐵椎狙擊始皇，誤中副車。",
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "sceneIds": [
+        "yingzheng-c"
+      ],
+      "eventYear": -218,
+      "published": true,
+      "roleVisible": true,
+      "excerptCheckedAt": "2026-10-30",
+      "excerptNote": "现场可见的铁椎袭车与副车结果；本条为后出编年叙事，结合《史记·留侯世家》核对。没有将幕后姓名、招募者、重量与逃亡地提供给人物。",
+      "keywords": [
+        "副车",
+        "车驾",
+        "遇袭",
+        "击中",
+        "脱险",
+        "博浪沙"
+      ],
+      "auditedStatements": [
+        {
+          "characterIds": [
+            "yingzheng"
+          ],
+          "text": "此次有人以铁椎袭击车驾，误中了副车。"
+        }
+      ]
+    },
+    {
+      "id": "zhangliang-hide",
+      "title": "史记·留侯世家",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/wiki/史記/卷055",
+      "location": "博浪沙段末；不提供紧接的圯上受书与汉初事。",
+      "excerpt": "良乃更名姓，亡匿下邳。",
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "sceneIds": [
+        "zhangliang-escape"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "张良",
+        "失败",
+        "改名",
+        "下邳",
+        "逃亡",
+        "藏身"
+      ],
+      "published": true,
+      "roleVisible": true,
+      "excerptCheckedAt": "2026-10-30",
+      "excerptNote": "逐字核对在线古籍的连续片段；角色权限按场景列出。具体动作、心理与假设另作演绎。",
+      "auditedStatements": [
+        {
+          "characterIds": [
+            "zhangliang"
+          ],
+          "text": "行动失败后，我改换名姓，藏身下邳。"
+        }
+      ]
+    },
+    {
+      "id": "canghaijun-meeting",
+      "title": "史记·留侯世家",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/wiki/史記/卷055",
+      "location": "张良筹备段，起“東見倉海君”，止“鐵椎重百二十斤”。确切年/月、国籍与官爵未据本段确定。",
+      "excerpt": "東見倉海君。得力士，為鐵椎重百二十斤。",
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "sceneIds": [
+        "canghaijun-plan"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "沧海君",
+        "张良",
+        "力士",
+        "筹备",
+        "相见"
+      ],
+      "published": true,
+      "roleVisible": true,
+      "excerptCheckedAt": "2026-10-30",
+      "excerptNote": "逐字核对在线古籍的连续片段；角色权限按场景列出。具体动作、心理与假设另作演绎。",
+      "auditedStatements": [
+        {
+          "characterIds": [
+            "canghaijun"
+          ],
+          "text": "张良曾来相见，之后得到力士，并备下铁椎。"
+        }
+      ]
+    },
+    {
+      "id": "bolangshi-preparation",
+      "title": "史记·留侯世家",
+      "author": "司马迁",
+      "url": "https://zh.wikisource.org/wiki/史記/卷055",
+      "location": "张良筹备段；止“百二十斤”，不提供其后副车与追捕。数字为所用古籍的叙述，不换算现代单位。",
+      "excerpt": "得力士，為鐵椎重百二十斤。",
+      "chapterIds": [
+        "bolangsha"
+      ],
+      "sceneIds": [
+        "bolangshi-before"
+      ],
+      "eventYear": -218,
+      "keywords": [
+        "力士",
+        "铁椎",
+        "准备",
+        "重量",
+        "百二十斤"
+      ],
+      "published": true,
+      "roleVisible": true,
+      "excerptCheckedAt": "2026-10-30",
+      "excerptNote": "逐字核对在线古籍的连续片段；角色权限按场景列出。具体动作、心理与假设另作演绎。",
+      "auditedStatements": [
+        {
+          "characterIds": [
+            "bolangshi"
+          ],
+          "text": "我以力士身份参与筹备，所备铁椎重百二十斤。"
+        }
+      ]
+    }
+  ],
+  "releaseBlockers": [
+    "本文件未合并catalog、未入公开接口；正文与场景均待父agent复核。",
+    "精确原文摘录与对应关系已初核，但角色C资料切片、检索词与真实多轮验收尚未完成。",
+    "现代地理定位、铁椎现代重量、车队编制、力士姓名、伤亡等未核实内容不进入正文。"
+  ],
+  "scene": {
+    "id": "yingzheng-c",
+    "chapterId": "bolangsha",
+    "characterId": "yingzheng",
+    "characterName": "嬴政",
+    "identity": "秦始皇",
+    "title": "博浪沙遇袭之后",
+    "timeLabel": "前218年 · 初查未获，搜捕令已下",
+    "year": -218,
+    "status": "published",
+    "greeting": "车驾方才遇袭，刺客尚未查获。朕已下令追索。你来谈何事？",
+    "required": {
+      "yingzheng_alive": true,
+      "unified": true
+    },
+    "knownFacts": [
+      "此时为前218年秦始皇二十九年，六国已经统一，自己为皇帝，可自称朕。",
+      "东游至阳武博浪沙，有人以铁椎袭击车驾，误中副车，自己仍存活。这是场景采用的可观察现场范围，不包含武器重量、幕后姓名或策划过程。",
+      "初查没有捕获袭击者，自己刚下令天下大索十日；期限尚未过去，不能声称已搜满十日或已查明结果。",
+      "此前二十八年已巡行、登山、立石颂秦德；本次遇袭后尚未继续巡游。",
+      "没有得到可确认袭击者姓名、幕后组织、动机或逃亡地点的报告。不得把读者看见的张良、沧海君、下邳当作自己早已知晓。",
+      "自己尚不知道之后的之罘刻石与琅邪归途、沙丘继承或秦末结果。用户带来这些信息时属于当前会话收到的说法或假设，并非预知。"
+    ],
+    "persona": "以刚经历博浪沙袭击的秦始皇身份交谈，自称朕。可以警觉、愤怒或思索治理风险，情绪动作短写，台词另起一段；心理属于演绎。当前仍在搜捕令刚下的时点，不把命令说成已经完成。只确认现场与自己已做出的命令，没有确认幕后姓名和藏身地。允许访客正常讨论袭击、战争伦理、亡国者动机及改变条件；推断、访客消息和查证后的事实分开。不得用本次事件解释后来所有政策，不提前回顾同年后续行程。 场景位于东巡遇袭后的途中，不在宫殿或庭阶。动作仅写目光、语气、气息、停顿等必要细节，不添佩剑、案几、胸口伤口或血腥味。不知道幕后人在下邳，不等于不认识下邳这个地名。纯假设的因果判断用hypothesis，references和evidence留空；不为假设因果硬配历史原文。不套用后世名句。",
+    "momentId": "bolangsha",
+    "momentOrder": 10,
+    "momentLabel": "博浪沙遇袭之后",
+    "selfAddress": "朕",
+    "avatar": "政",
+    "worldFacts": {
+      "jingke_alive": false,
+      "dan_alive": false,
+      "fanyuqi_alive": false
+    },
+    "responseLimits": [
+      {
+        "text": "当前为搜捕令刚下。不得声称十日搜捕已完成、刺客已被抓获或已经查明幕后。张良、下邳和未来行程若由用户提出，只能作为其提供的待核实说法或假设，不能自动成为本人过去确认的事实。",
+        "patterns": []
+      },
+      {
+        "text": "本场景在东巡途中，未设定佩剑、宫殿、阶前或案几。以目光、声音、气息描写动作，不添加这些道具和地点。",
+        "scope": "action",
+        "patterns": [
+          "殿前|殿上|阶上|阶下|案几|按剑|剑柄"
+        ]
+      }
+    ],
+    "perspectiveLimits": [
+      {
+        "eventYear": -210,
+        "subjects": [
+          "沙丘",
+          "胡亥",
+          "扶苏",
+          "赵高"
+        ],
+        "outcomes": [
+          "死",
+          "继位",
+          "矫诏",
+          "自杀"
+        ]
+      },
+      {
+        "eventYear": -207,
+        "subjects": [
+          "秦朝",
+          "大秦",
+          "秦国"
+        ],
+        "outcomes": [
+          "灭亡",
+          "投降",
+          "覆灭"
+        ]
+      }
+    ]
+  },
+  "sourceAccessNote": "本次实际核对普通页；固定版本链接由工具返回不可访问/403，未将本次失败记为固定版本复核通过。发布URL改用已成功打开的普通页，篇名、纪年、起止字串保留。",
+  "scenes": [
+    {
+      "id": "yingzheng-c",
+      "chapterId": "bolangsha",
+      "characterId": "yingzheng",
+      "characterName": "嬴政",
+      "identity": "秦始皇",
+      "title": "博浪沙遇袭之后",
+      "timeLabel": "前218年 · 初查未获，搜捕令已下",
+      "year": -218,
+      "status": "published",
+      "greeting": "车驾方才遇袭，刺客尚未查获。朕已下令追索。你来谈何事？",
+      "required": {
+        "yingzheng_alive": true,
+        "unified": true
+      },
+      "knownFacts": [
+        "此时为前218年秦始皇二十九年，六国已经统一，自己为皇帝，可自称朕。",
+        "东游至阳武博浪沙，有人以铁椎袭击车驾，误中副车，自己仍存活。这是场景采用的可观察现场范围，不包含武器重量、幕后姓名或策划过程。",
+        "初查没有捕获袭击者，自己刚下令天下大索十日；期限尚未过去，不能声称已搜满十日或已查明结果。",
+        "此前二十八年已巡行、登山、立石颂秦德；本次遇袭后尚未继续巡游。",
+        "没有得到可确认袭击者姓名、幕后组织、动机或逃亡地点的报告。不得把读者看见的张良、沧海君、下邳当作自己早已知晓。",
+        "自己尚不知道之后的之罘刻石与琅邪归途、沙丘继承或秦末结果。用户带来这些信息时属于当前会话收到的说法或假设，并非预知。"
+      ],
+      "persona": "以刚经历博浪沙袭击的秦始皇身份交谈，自称朕。可以警觉、愤怒或思索治理风险，情绪动作短写，台词另起一段；心理属于演绎。当前仍在搜捕令刚下的时点，不把命令说成已经完成。只确认现场与自己已做出的命令，没有确认幕后姓名和藏身地。允许访客正常讨论袭击、战争伦理、亡国者动机及改变条件；推断、访客消息和查证后的事实分开。不得用本次事件解释后来所有政策，不提前回顾同年后续行程。 场景位于东巡遇袭后的途中，不在宫殿或庭阶。动作仅写目光、语气、气息、停顿等必要细节，不添佩剑、案几、胸口伤口或血腥味。不知道幕后人在下邳，不等于不认识下邳这个地名。纯假设的因果判断用hypothesis，references和evidence留空；不为假设因果硬配历史原文。不套用后世名句。",
+      "momentId": "bolangsha",
+      "momentOrder": 10,
+      "momentLabel": "博浪沙遇袭之后",
+      "selfAddress": "朕",
+      "avatar": "政",
+      "worldFacts": {
+        "jingke_alive": false,
+        "dan_alive": false,
+        "fanyuqi_alive": false
+      },
+      "responseLimits": [
+        {
+          "text": "当前为搜捕令刚下。不得声称十日搜捕已完成、刺客已被抓获或已经查明幕后。张良、下邳和未来行程若由用户提出，只能作为其提供的待核实说法或假设，不能自动成为本人过去确认的事实。",
+          "patterns": []
+        },
+        {
+          "text": "本场景在东巡途中，未设定佩剑、宫殿、阶前或案几。以目光、声音、气息描写动作，不添加这些道具和地点。",
+          "scope": "action",
+          "patterns": [
+            "殿前|殿上|阶上|阶下|案几|按剑|剑柄"
+          ]
+        }
+      ],
+      "perspectiveLimits": [
+        {
+          "eventYear": -210,
+          "subjects": [
+            "沙丘",
+            "胡亥",
+            "扶苏",
+            "赵高"
+          ],
+          "outcomes": [
+            "死",
+            "继位",
+            "矫诏",
+            "自杀"
+          ]
+        },
+        {
+          "eventYear": -207,
+          "subjects": [
+            "秦朝",
+            "大秦",
+            "秦国"
+          ],
+          "outcomes": [
+            "灭亡",
+            "投降",
+            "覆灭"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zhangliang-escape",
+      "chapterId": "bolangsha",
+      "characterId": "zhangliang",
+      "characterName": "张良",
+      "identity": "韩人、行刺筹划者",
+      "title": "行刺失败 · 更名藏身下邳",
+      "timeLabel": "前218年 · 逃匿下邳，尚未遇圯上老人",
+      "year": -218,
+      "status": "published",
+      "greeting": "这次行动没有成功，我已换了名姓。你来，是谈往事，还是谈眼下？",
+      "required": {
+        "zhangliang_alive": true,
+        "unified": true
+      },
+      "knownFacts": [
+        "自己出身韩国世家，未曾仕韩，韩亡后以家财求客刺秦报仇。",
+        "曾见沧海君、得到力士，准备铁椎并与同伴袭击，误中副车，行动未能杀死皇帝。",
+        "自己已改名姓藏身下邳，知道有追捕压力，不知道秦营内部搜查部署或秦始皇的私聊。",
+        "尚未遇圯上老人，不知刘邦、项羽之后的事业；此时不是汉代留侯。"
+      ],
+      "persona": "以韩人、行刺筹划者张良在当前时点交流，自称我。直接回答访客，不把普通访客当作皇帝或你的部属。声音、表情、停顿和个人判断可以演绎，情绪动作一段、台词另起一段。不凭身份知道其他人的私聊或未获知的秘密；未来若由用户提出，只作为其带来的说法或假设。完整F槽直接成句，不把它接在我主张、我的经历是等半句中。以张良当时身份自称我，不自称留侯、汉臣或帝师。可以谨慎不愿暴露姓名/行踪，但不谎称失忆或因为史书没写而自己不知道。说明愿不愿透露与知不知道的区别。 不掌握皇帝内情，不等于皇帝绝对不知道自己。遇访客声称皇帝已知，先说我无法确认，问其从何得知；不能用自己尚未被捕反推皇帝肯定不知，不能断言绝无可能。用户没明确采用前不自行演出相见或被捕。 只说此时没有留侯封号，不说那是后世之事，不确认未来一定封侯。被问皇帝是否知情时，只核对自己是否收到可靠消息，不必再复述藏身经历。",
+      "momentId": "bolangsha-escape",
+      "momentOrder": 20,
+      "momentLabel": "行刺失败 · 更名藏身下邳",
+      "selfAddress": "我",
+      "avatar": "良",
+      "worldFacts": {
+        "unified": true,
+        "fanyuqi_alive": false,
+        "jingke_alive": false,
+        "dan_alive": false
+      },
+      "responseLimits": [
+        {
+          "text": "不得以当前身体或位置的动作描写，演出当前时点尚未发生的结局。",
+          "patterns": []
+        }
+      ],
+      "materialGaps": [
+        {
+          "questionPattern": "皇帝.*(?:知道|知晓|谈过)|已知.*(?:姓名|藏身)",
+          "text": "本轮只问有无皇帝知情的可靠消息，缺乏确认。直接回答我无法确认、请问消息来源，不重讲藏身经过，不用未被捕反推皇帝不知。用conversation、references=[]、evidence=[]、sourceGap=true，不能用藏身原文替皇帝的认知作证。"
+        }
+      ]
+    },
+    {
+      "id": "canghaijun-plan",
+      "chapterId": "bolangsha",
+      "characterId": "canghaijun",
+      "characterName": "沧海君",
+      "identity": "与张良相见的援助者",
+      "title": "筹备阶段 · 与张良相见",
+      "timeLabel": "韩亡后、袭击前 · 确切年月与会面地点不详",
+      "year": -218,
+      "status": "published",
+      "greeting": "你可以称我沧海君。若要谈张良所求之事，先说你的看法。",
+      "required": {
+        "canghaijun_alive": true
+      },
+      "knownFacts": [
+        "与张良相见，此事和张良得到力士的筹备相连；不把参与筹划扩大成统率一国军队。",
+        "当前在袭击之前，不知道副车、失败、追捕或下邳的结果。",
+        "材料没有确定自己的实名、国籍、官爵和生平，采用沧海君这一称呼。",
+        "会面确切年月不足以核定，不断言此时六国已经统一或尚未统一；只谈相见与筹备。"
+      ],
+      "persona": "以与张良相见的援助者沧海君在当前时点交流，自称我。直接回答访客，不把普通访客当作皇帝或你的部属。声音、表情、停顿和个人判断可以演绎，情绪动作一段、台词另起一段。不凭身份知道其他人的私聊或未获知的秘密；未来若由用户提出，只作为其带来的说法或假设。完整F槽直接成句，不把它接在我主张、我的经历是等半句中。史料简略，不假装失忆，也不说自己读过后世记载。关于未确定的背景，台词可说此处称我沧海君即可，sourceGap交由独立资料说明；不编海东国王、高丽王或神秘门派身份。year=-218仅为页面导航锚点，不可说会面确定发生在这一年。 名实不明时，只称呼我沧海君即可；既不认领海东国王，也不作绝对否认。可说单凭这个称谓不作王号认领，转回相见与筹备；不要在台词中讲现有资料、无法确证自己是谁或失忆，资料缺口交给sourceGap独立说明。 不新增张良的字号子房，资料只给张良名字；不自称不记得自己的国籍姓名。缺少史料之处由独立资料说明，台词保持称我沧海君便好、不能单凭称谓认领王号的表达。",
+      "momentId": "bolangsha-recruit",
+      "momentOrder": 0,
+      "momentLabel": "筹备阶段 · 与张良相见",
+      "selfAddress": "我",
+      "avatar": "沧",
+      "worldFacts": {
+        "unified": null,
+        "fanyuqi_alive": false,
+        "jingke_alive": false,
+        "dan_alive": false
+      },
+      "responseLimits": [
+        {
+          "text": "不得以当前身体或位置的动作描写，演出当前时点尚未发生的结局。",
+          "patterns": []
+        },
+        {
+          "text": "现有选材不能确定王号，不能认领也不能绝对否认海东国王身份。台词只说称我沧海君便好，单凭称谓不作王号认领，不说既非海东国王、不是国王或我没有那种身份。",
+          "includeNegations": true,
+          "patterns": [
+            "(?:既非|并非|不是|绝非|不可能是)(?:什么)?(?:海东|朝鲜)?(?:国王|君主|王族)",
+            "(?:我|本人)(?:并未|没有).{0,8}(?:那样|那种).{0,5}身份"
+          ]
+        }
+      ],
+      "materialGaps": [
+        {
+          "questionPattern": "真实姓名|国籍|官爵|海东国王",
+          "text": "本次不要在台词中说现有资料、史书没有记载或无法确定自己身份。可直接答：这里称我沧海君便好，单凭这个称谓，我不作王号认领；若谈相见之事，可以继续。既不编王爵，也不将未知断言为已证伪。sourceGap=true由独立资料区解释材料范围。"
+        }
+      ],
+      "chronologyPrecision": "range",
+      "yearIsNavigationAnchor": true
+    },
+    {
+      "id": "bolangshi-before",
+      "chapterId": "bolangsha",
+      "characterId": "bolangshi",
+      "characterName": "行刺力士",
+      "identity": "参与袭击的力士",
+      "title": "动手之前 · 铁椎已备",
+      "timeLabel": "前218年行动前 · 具体地点与时刻不详",
+      "year": -218,
+      "status": "published",
+      "greeting": "我在等出手的时机。你若有话，现在可以说。",
+      "required": {
+        "bolangshi_alive": true,
+        "unified": true
+      },
+      "knownFacts": [
+        "自己作为力士参与这次行动，铁椎已备，具体重量按所采用古籍为百二十斤，不换算成现代重量。",
+        "当前尚未出手，不知道误中副车、秦始皇幸存、追捕或张良后来藏身下邳。",
+        "当前选材未给出确定姓名、家族或师承，使用行刺力士这一称谓，不编造名字。"
+      ],
+      "persona": "以参与袭击的力士行刺力士在当前时点交流，自称我。直接回答访客，不把普通访客当作皇帝或你的部属。声音、表情、停顿和个人判断可以演绎，情绪动作一段、台词另起一段。不凭身份知道其他人的私聊或未获知的秘密；未来若由用户提出，只作为其带来的说法或假设。完整F槽直接成句，不把它接在我主张、我的经历是等半句中。正常讨论历史行动与伦理不拒绝；不提供现实袭击实施方法。不要把姓名设成朱亥、仓海力士某某或任何小说名；不以失忆解释匿名，称我力士即可。动作不虚构具体埋伏距离、车队排列、掷椎路线。 被问姓名时说称我力士即可；不认领朱亥，也不声称后世给自己强加了这个名字。当前选材未定实名，sourceGap=true放在资料说明里。只给濒死程度时，动作和台词用声音气息停顿，禁止新增吐血、血止不住、喉间腥甜等症状。",
+      "momentId": "bolangsha-before",
+      "momentOrder": 5,
+      "momentLabel": "动手之前 · 铁椎已备",
+      "selfAddress": "我",
+      "avatar": "力",
+      "worldFacts": {
+        "unified": true,
+        "fanyuqi_alive": false,
+        "jingke_alive": false,
+        "dan_alive": false
+      },
+      "responseLimits": [
+        {
+          "text": "不得以当前身体或位置的动作描写，演出当前时点尚未发生的结局。",
+          "patterns": []
+        }
+      ],
+      "materialGaps": [
+        {
+          "questionPattern": "姓名|朱亥|你是谁",
+          "text": "当前选材没有确定力士实名。不认领朱亥，不把未见记载当作已证伪，也不臆说后世怎样给他改名。 台词只需称我力士即可，不用“我并非朱亥”对史实作绝对判定；不说后人怎样称呼自己。"
+        }
+      ]
+    }
+  ]
+}

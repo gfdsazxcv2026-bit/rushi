@@ -1,0 +1,20 @@
+export const catalog = {
+  periods:[{id:'qin',name:'秦',years:'测试时期',status:'published',summary:'合成接口测试数据',chapterIds:['jingke','unification'],kind:'dynasty'},{id:'han',name:'汉',years:'测试时期',status:'coming_soon',summary:'待公开',chapterIds:[],kind:'dynasty'}],
+  chapters:[
+    {id:'jingke',order:1,title:'合成测试章一',status:'published',reviewStatus:'checked',paragraphs:['合成数据，仅用于测试。'],sourceIds:['s-a'],nextId:'unification'},
+    {id:'unification',order:2,title:'合成测试章二',status:'published',reviewStatus:'checked',paragraphs:['合成数据，仅用于测试。'],sourceIds:['s-b'],nextId:'bolangsha'},
+    {id:'bolangsha',order:3,title:'未公开测试章',status:'draft',reviewStatus:'pending',paragraphs:['DRAFT_SECRET_DO_NOT_LEAK'],sourceIds:['s-hidden']}
+  ],
+  scenes:[
+    {id:'yingzheng-a',chapterId:'jingke',characterId:'yingzheng',characterName:'嬴政',identity:'秦王',title:'合成场景A',year:-227,status:'published',required:{yingzheng_alive:true},knownFacts:['寡人刚经历行刺。'],greeting:'合成开场'},
+    {id:'yingzheng-b',chapterId:'unification',characterId:'yingzheng',characterName:'嬴政',identity:'秦始皇',title:'合成场景B',year:-221,status:'published',required:{yingzheng_alive:true,unified:true},knownFacts:['统一已经完成。']},
+    {id:'lisi-b',chapterId:'unification',characterId:'lisi',characterName:'李斯',identity:'廷尉',title:'合成李斯场景',year:-221,status:'published',required:{lisi_alive:true,unified:true},knownFacts:['统一已经完成。']},
+    {id:'hidden-c',chapterId:'bolangsha',characterId:'yingzheng',characterName:'嬴政',year:-218,status:'draft',persona:'HIDDEN_SCENE_SECRET'}
+  ],
+  sources:[
+    {id:'s-a',title:'合成资料A',url:'https://example.invalid/a',location:'测试位置',excerpt:'合成资料荆轲行刺经过',chapterIds:['jingke'],sceneIds:['yingzheng-a'],eventYear:-227,keywords:['荆轲','行刺'],published:true,roleVisible:true},
+    {id:'s-b',title:'合成资料B',url:'https://example.invalid/b',location:'测试位置',excerpt:'合成资料统一与郡县',chapterIds:['unification'],sceneIds:['yingzheng-b','lisi-b'],eventYear:-221,keywords:['统一','郡县'],published:true,roleVisible:true},
+    {id:'s-hidden',title:'未公开合成资料',excerpt:'DRAFT_SOURCE_SECRET',chapterIds:['bolangsha'],sceneIds:['hidden-c'],eventYear:-218,published:false,roleVisible:true},
+    {id:'s-misconfigured',title:'错误配置测试',excerpt:'UNCHECKED_CHAPTER_SOURCE',chapterIds:['bolangsha'],sceneIds:['yingzheng-a'],eventYear:-230,published:true,roleVisible:true}
+  ]
+};

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f2e9">
+  <meta name="description" content="入史：沿着时间进入故事，与历史人物相遇。中文历史互动阅读本地 Demo。">
+  <title>入史 · 进入历史的现场</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/stitch.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="入史首页"><span class="brand-seal" aria-hidden="true">史</span><span>入史<small>与往事相逢</small></span></a>
+    <nav aria-label="主导航"><a href="#/" data-nav="home">历史时间轴</a><a href="#/qin" data-nav="qin">秦朝专题</a></nav>
+    <span class="demo-tag" id="global-mode">本地 Demo</span>
+  </header>
+  <div id="global-notice" class="global-notice" role="status" aria-live="polite"></div>
+  <main id="main" tabindex="-1">
+    <section id="loading-view" class="loading-view"><span class="loading-orbit" aria-hidden="true"></span><p id="loading-text">正在展开历史长卷……</p><button id="bootstrap-retry" class="button secondary" hidden>重新连接</button></section>
+    <section id="home-view" class="home-view" hidden>
+      <div class="hero"><div class="eyebrow">READ THE PAST. MEET ITS PEOPLE.</div><h1>往事不远，<br>一步<span>入史。</span></h1><p>从一个故事进入一个时代。<br>读人物的选择，也问他们未曾回答的问题。</p><a class="button primary" href="#/qin">从秦朝开始 <span aria-hidden="true">↗</span></a><span class="hero-note">首个专题 · 秦与战国末年</span><div class="hero-decoration" aria-hidden="true"><span>史</span><i></i><small>一卷兴亡，千年回响</small></div></div>
+      <div class="section-lead"><div><span class="eyebrow">THE LONG VIEW</span><h2>沿时间，走进历史</h2></div><p>悬停或聚焦节点，展开这个时代。<br><span class="mobile-hint">手机上轻点展开，再选择进入。</span></p></div>
+      <div id="timeline" class="timeline" aria-label="秦至清历史时间轴"></div>
+      <footer class="page-footer"><span>入史 · 历史互动阅读</span><span>正文有据，演绎有界。当前为功能验收 Demo。</span></footer>
+    </section>
+    <section id="directory-view" class="directory-view" hidden>
+      <a class="back-link" href="#/">← 返回时间轴</a>
+      <div class="directory-heading"><span class="eyebrow">THE QIN CHRONICLES</span><h1>秦<span>从王国到帝国</span></h1><p>七个事件，走过一次统一与落幕。<br>从战国前传开始，沿人物行动看见历史的转折。</p><div class="legend"><span class="status-dot"></span><span id="published-count">逐章核对，逐章开放</span><span class="legend-separator">/</span><span>未完成内容清楚保留为待公开</span></div></div>
+      <div id="chapter-list" class="chapter-list"></div>
+      <footer class="page-footer"><span>故事是入口，资料在身旁。</span><span>七章为内容目标，以实际开放状态为准。</span></footer>
+    </section>
+    <section id="chapter-view" class="chapter-view" hidden>
+      <header class="chapter-topbar"><a href="#/qin" class="back-link">← 秦朝目录</a><div id="chapter-breadcrumb"></div><button id="show-sources" class="text-button">查看资料 ↗</button></header>
+      <div class="mobile-tabs" role="tablist" aria-label="章节视图"><button id="read-tab" role="tab" aria-selected="true" aria-controls="reading-pane">阅读</button><button id="chat-tab" role="tab" aria-selected="false" aria-controls="chat-pane">人物聊天</button></div>
+      <div class="reading-layout" id="reading-layout" data-view="read">
+        <article id="reading-pane" class="reading-pane" aria-label="章节阅读" tabindex="0">
+          <div class="article-meta" id="article-meta"></div><h1 id="article-title"></h1><p id="article-summary" class="article-summary"></p><div class="article-rule"></div><div id="article-body" class="article-body"></div><div id="article-supplements" class="supplements"></div>
+          <section id="sources-section" class="sources-section"><div class="eyebrow">BEHIND THE STORY</div><h2>故事有来处</h2><p class="section-caption">正文为有来源的原创概述。史料记载、争议与人物演绎分别呈现。</p><div id="article-sources"></div></section>
+          <div id="next-chapter" class="next-chapter"></div>
+        </article>
+        <div id="reading-splitter" class="reading-splitter" role="separator" tabindex="0" aria-label="调整阅读与聊天宽度" aria-orientation="vertical" aria-controls="reading-pane chat-pane" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" title="左右拖动调整宽度 · 双击恢复等宽 · 方向键微调"></div>
+        <aside id="chat-pane" class="chat-pane" aria-label="历史人物聊天">
+          <header class="chat-heading"><div class="character-avatar" id="character-avatar" aria-hidden="true">秦</div><div class="chat-person"><h2 id="character-name">与人物相遇</h2><p id="scene-description">选择历史场景，开始交流</p></div><span class="plot-badge" id="plot-badge">历史场景演绎</span></header>
+          <div class="chat-disclaimer">AI 历史角色演绎，部分心理活动与假设情节属于创作。</div>
+          <div id="mock-banner" class="mock-banner" hidden>模拟模式 · 当前为规则演示，任意自由剧情需接入模型。</div>
+          <div id="chat-unavailable" class="chat-unavailable" hidden><span aria-hidden="true">◷</span><h3>人物聊天暂未开放</h3><p>这一章可以阅读。人物与场景仍在准备中。</p></div>
+          <button id="chat-settings-toggle" class="chat-settings-toggle" type="button" aria-expanded="false" aria-controls="chat-settings-panel"><span>人物与会话</span><span class="chat-settings-toggle-hint"><span id="chat-settings-toggle-text">展开</span><span class="chat-settings-chevron" aria-hidden="true">⌄</span></span></button>
+          <div id="chat-settings-panel" class="chat-settings-panel" role="region" aria-label="人物与会话设置" aria-hidden="true" inert>
+            <div class="chat-settings-clip"><div class="chat-settings-content">
+          <div id="chat-controls" class="chat-controls">
+            <div class="scene-row"><label for="scene-select">当前场景</label><select id="scene-select" aria-describedby="scene-selection-help"></select><button id="switch-character" class="button tiny secondary" type="button" aria-haspopup="dialog" aria-controls="character-picker" aria-describedby="scene-selection-help">选择人物</button></div>
+            <p id="scene-selection-help" class="scene-selection-help" aria-live="polite"></p>
+            <div class="start-row"><button id="start-fresh" class="button tiny secondary">从本章史实开始</button><details id="continue-details" class="continue-details"><summary>已有会话 / 续接</summary><div class="continue-form"><label for="source-session">已保存的来源会话</label><select id="source-session"></select><button id="return-source" class="button tiny secondary">返回该会话</button><label for="source-snapshot">来源快照</label><select id="source-snapshot"><option value="">使用来源当前状态</option></select><button id="start-continue" class="button tiny primary">从此快照续接</button><p>续接会创建独立子分支；来源会话之后的变化不会自动覆盖这里。</p></div></details></div>
+          </div>
+          <div id="session-origin" class="session-origin" hidden></div>
+            </div></div>
+          </div>
+          <div id="chat-error" class="chat-error" role="alert" hidden></div>
+          <div id="messages" class="messages" role="log" aria-label="聊天记录" aria-relevant="additions text"></div>
+          <details id="plot-settings" class="plot-settings"><summary>当前剧情设定 <span id="condition-count">0 项</span></summary><div class="settings-body"><p class="setting-help">“如果……”可以只是讨论。通过这里提交，才明确采用为本分支条件。</p><div id="condition-list"></div><form id="condition-form"><label class="sr-only" for="condition-type">条件类型</label><select id="condition-type"><option value="custom">自定义假设条件</option><option value="character_status">当前人物受伤 / 濒死 / 恢复</option><option value="character_dead">当前人物已死亡</option><option value="not_unified">尚未完成统一</option></select><label id="condition-status-label" class="setting-help" for="condition-status" hidden>当前人物的身体状态</label><select id="condition-status" hidden><option value="critical">濒死 · 尚未死亡</option><option value="injured">受伤 · 仍可交谈</option><option value="normal">已获救并恢复</option></select><p id="condition-status-help" class="setting-help" hidden>当前人物能直接感知自己的伤势；其他人物仍须亲眼看到或收到消息才会获知。</p><label class="sr-only" for="condition-text">剧情条件</label><textarea id="condition-text" rows="2" maxlength="500" placeholder="例如：本段剧情设定为，我已当面提醒当前人物注意危险。"></textarea><label class="known-checkbox"><input id="condition-known" type="checkbox"> 其他背景信息：当前人物已经获知</label><button id="adopt-condition" class="button tiny secondary" type="submit">明确采用此条件</button></form><div id="knowledge-list" class="knowledge-list"></div></div></details>
+          <form id="chat-form" class="composer"><label class="sr-only" for="chat-input">给历史人物的消息</label><textarea id="chat-input" rows="2" maxlength="2000" placeholder="可以直接问，也可以先聊聊眼前的局势……"></textarea><div class="composer-footer"><span id="input-count">0 / 2000</span><div><button id="retry-message" class="button tiny secondary" type="button" hidden>重试上次消息</button><button id="stop-message" class="button tiny secondary" type="button" hidden>停止生成</button><button id="send-message" class="button tiny primary" type="submit">发送 <span aria-hidden="true">↑</span></button></div></div><p id="composer-hint" class="composer-hint">Enter 发送 · Shift + Enter 换行</p></form>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <dialog id="character-picker" class="character-picker" aria-labelledby="character-picker-title" aria-describedby="character-picker-intro">
+    <header class="character-picker-heading"><div><p class="eyebrow">走近故事中的人</p><h2 id="character-picker-title">选择人物</h2></div><button id="close-character-picker" class="character-picker-close" type="button" aria-label="关闭人物选择">×</button></header>
+    <p id="character-picker-intro" class="character-picker-intro">选择一位人物，直接开始交流。同一时点可切换人物；进入另一时点时，会使用独立会话。</p>
+    <p id="character-picker-status" class="character-picker-status" role="status" aria-live="polite"></p>
+    <p id="character-picker-error" class="character-picker-error" role="alert" hidden></p>
+    <div id="character-picker-list" class="character-picker-list"></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

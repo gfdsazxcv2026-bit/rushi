@@ -1,0 +1,278 @@
+/* Adapted from the supplied Stitch chapter design (2026-10-29).
+   Presentation only: original IDs, app.js, sources and session services remain
+   authoritative. No exported demo scripts, example facts or CDN dependency. */
+body {
+  background-color: #f6f2e9;
+  background-image: radial-gradient(#ebe5d8 0.65px, transparent 0.65px);
+  background-size: 24px 24px;
+}
+/* Keep the original outlined seal, wordmark and subtitle on every page. */
+.toast { pointer-events: none; }
+/* Extend the confirmed chapter palette and card treatment to entry pages. */
+body:not(.in-chapter) .site-header { height: 64px; }
+body:not(.in-chapter) .demo-tag { border-radius: 6px; }
+.home-view, .directory-view { max-width: 1240px; padding-left: 40px; padding-right: 40px; }
+.hero { margin-top: 28px; padding: 48px 40px; min-height: 420px; border: 1px solid var(--line); border-radius: 16px; background: var(--paper-light); }
+.hero h1 { font-size: clamp(42px, 5vw, 64px); margin-top: 15px; letter-spacing: 3px; }
+.hero-decoration { right: 42px; top: 40px; }
+.section-lead { margin-top: 36px; }
+.period { min-height: 190px; }
+.period-body { padding: 12px 22px; border: 1px solid transparent; border-radius: 16px; transition: background .2s, border-color .2s; }
+.period-years { padding-top: 25px; font-size: 11px; }
+.period-node { padding-top: 28px; }
+.period-status { border-radius: 4px; }
+.period-detail { max-width: 690px; font-size: 13px; }
+.period-detail .period-links { gap: 8px 12px; }
+.period-chapter { padding: 5px 9px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper-light); font-size: 12px; }
+.period-enter { border: 1px solid var(--red); border-radius: 6px; background: var(--red); color: #fffaf3; padding: 5px 11px; font-size: 12px; }
+.period-chapter:hover { border-color: var(--red); color: var(--red); }
+.period-enter:hover { background: #8b3120; }
+.period:hover .period-body, .period:focus-within .period-body, .period.expanded .period-body { background: var(--paper-light); border-color: var(--line); }
+.directory-heading { padding: 28px 32px; margin: 24px 0; border: 1px solid var(--line); border-radius: 16px; background: var(--paper-light); }
+.directory-heading h1 { font-size: 64px; }
+.chapter-list { display: grid; gap: 14px; margin-bottom: 32px; }
+.chapter-card { padding: 25px 26px; border: 1px solid var(--line); border-radius: 16px; background: var(--paper-light); transition: background .2s, border-color .2s; }
+.chapter-card.live:hover, .chapter-card.live:focus-visible { background: #f8f1e9; border-color: #c7a38e; }
+.chapter-card.live .chapter-number { color: var(--red); }
+.chapter-card .chapter-open { padding: 9px 13px; border: 1px solid #d7b7ab; border-radius: 7px; background: #f7eee8; }
+.chapter-card > .coming-badge { border-radius: 6px; }
+.chapter-card:not(.live) { background: #f4f1e9; }
+.page-footer { font-size: 11px; }
+@media (max-width: 760px) {
+  body:not(.in-chapter) .site-header { height: 64px; padding: 0 14px; }
+  body:not(.in-chapter) .site-header nav { gap: 12px; }
+  body:not(.in-chapter) .site-header nav a { font-size: 11px; }
+  body:not(.in-chapter) .demo-tag { font-size: 10px; padding: 4px 5px; max-width: 62px; }
+  .home-view, .directory-view { padding-left: 16px; padding-right: 16px; }
+  .hero { margin-top: 18px; padding: 30px 22px; min-height: 405px; }
+  .hero h1 { font-size: 43px; }
+  .hero-decoration { right: -75px; top: 90px; }
+  .section-lead { margin-top: 28px; }
+  .section-lead h2 { font-size: 22px; }
+  .period { min-height: 270px; grid-template-columns: 47px 35px minmax(0, 1fr); }
+  .period-body { padding: 10px 12px; }
+  .period-years { font-size: 9px; padding-top: 23px; }
+  .period-node { padding-top: 27px; }
+  .period-heading { gap: 8px; flex-wrap: wrap; }
+  .period-heading h3 { font-size: 21px; }
+  .period-status { font-size: 9px; }
+  .period-detail { font-size: 12px; }
+  .period-chapter, .period-enter { font-size: 11px; }
+  .directory-heading { padding: 24px 20px; }
+  .directory-heading h1 { font-size: 52px; gap: 14px; }
+  .directory-heading h1 span { font-size: 19px; }
+  .chapter-card { grid-template-columns: 30px minmax(0, 1fr); gap: 10px; padding: 22px 16px; }
+  .chapter-card h2 { font-size: 20px; }
+  .chapter-card .chapter-meta { font-size: 10px; }
+  .chapter-card p { font-size: 12px; }
+  .page-footer { font-size: 10px; }
+}
+body.in-chapter .site-header { height: 64px; background: var(--paper); }
+body.in-chapter .site-header nav a { font-size: 13px; }
+body.in-chapter .demo-tag { border-radius: 6px; background: var(--paper); font-size: 11px; }
+.chapter-view { max-width: 1600px; padding: 0 24px; }
+.chapter-topbar { height: 46px; gap: 16px; }
+.chapter-topbar .back-link, .chapter-topbar #chapter-breadcrumb, .text-button { font-size: 12px; }
+.reading-layout {
+  position: relative;
+  grid-template-columns: minmax(0, 1fr) minmax(390px, 1fr);
+  height: calc(100dvh - 134px); min-height: 480px; max-height: none;
+  gap: 20px; border: 0; background: transparent; margin-bottom: 24px;
+}
+.reading-pane, .chat-pane {
+  border: 1px solid var(--line); border-radius: 16px;
+  background: #fbf9f4; box-shadow: 0 1px 2px #27292303;
+}
+.reading-pane { padding: 32px clamp(26px, 3vw, 48px) 40px; }
+.article-meta { font-size: 12px; line-height: 1.7; gap: 10px; margin-bottom: 22px; }
+.article-meta .review-tag { font-size: 11px; padding: 2px 7px; border-radius: 4px; }
+.era-tag { border: 1px solid #d7b7ab; border-radius: 4px; padding: 1px 6px; }
+.reading-pane > h1 { font-size: clamp(29px, 2.7vw, 40px); line-height: 1.55; letter-spacing: .5px; }
+.article-summary {
+  padding: 16px 18px; margin-top: 18px; border: 1px solid #e9e3d6;
+  border-radius: 12px; background: #f8f5ee; font-size: 15px; line-height: 1.9;
+}
+.article-body { font-size: 18px; line-height: 2.05; }
+.article-body p { margin-bottom: 23px; }
+.article-body p:first-child:first-letter { font-size: 30px; }
+.supplement summary, .source-card summary { font-size: 14px; }
+.supplement .supplement-body { font-size: 14px; }
+.sources-section { padding-top: 28px; }
+.section-caption, .source-card .source-location, .source-link { font-size: 12px; }
+.source-card blockquote { border-radius: 0 8px 8px 0; background: #f5f1e7; font-size: 14px; }
+.next-chapter h3 { font-size: 22px; }
+.chat-pane { background: #f2f5ed; overflow-x: hidden; overflow-y: auto; }
+.chat-heading { padding: 18px 20px 13px; background: #fbf9f4; gap: 12px; }
+.character-avatar {
+  width: 42px; height: 42px; flex-basis: 42px; border-radius: 11px;
+  background: #f2e6e1; border-color: #dab8aa; color: var(--red); font-size: 24px;
+}
+.chat-person h2 { font-size: 22px; letter-spacing: 1px; }
+.chat-person p { font-size: 12px; line-height: 1.65; margin-top: 4px; }
+.plot-badge { font-size: 11px; border-radius: 20px; padding: 4px 8px; max-width: 110px; background: #eaeFE5; }
+.plot-badge.hypothetical { background: #fff2d5; border-color: #d9ba7b; color: #7a5319; }
+.chat-disclaimer { font-size: 11px; padding: 0 20px 12px; background: #fbf9f4; }
+.mock-banner { font-size: 11px; padding: 7px 20px; }
+.chat-controls { padding: 10px 20px 12px; background: #fbf9f4; }
+.scene-row > label { font-size: 11px; }
+.scene-row select { min-height: 34px; font-size: 12px; border-radius: 6px; }
+.button { border-radius: 7px; }
+.button.tiny { font-size: 12px; padding: 7px 11px; min-height: 34px; }
+#switch-character { background: var(--red); color: #fffaf3; border-color: var(--red); }
+#switch-character:hover:not(:disabled) { background: #8b3120; }
+.scene-selection-help { font-size: 11px; margin-top: 7px; }
+.start-row { gap: 8px; margin-top: 9px; }
+.continue-details summary { font-size: 12px; border-radius: 6px; min-height: 34px; }
+.continue-form { width: 310px; border-radius: 10px; max-height: min(42dvh, 300px); overflow-y: auto; }
+.continue-form label, .continue-form p { font-size: 12px; }
+.session-origin { padding: 7px 20px; background: #edf0e6; font-size: 11px; }
+.messages { padding: 22px 20px 18px; min-height: 0; }
+.message { max-width: 95%; margin-bottom: 22px; }
+.message .message-role { font-size: 11px; margin-bottom: 7px; }
+.message .message-content {
+  background: #fbf9f4; border: 1px solid #dddccf; border-radius: 12px 12px 12px 3px;
+  font-size: 15px; line-height: 1.95; padding: 16px 18px;
+}
+.message.user .message-content { background: var(--red); border-color: var(--red); color: #fffaf3; border-radius: 12px 3px 12px 12px; }
+.message.assistant .message-content { border-left: 2px solid #a4ad95; }
+.message details { font-size: 12px; }
+.message details summary { font-size: 12px; }
+.message-actions { font-size: 11px; }
+.empty-chat p { font-size: 14px; line-height: 1.9; }
+.suggestions button { font-size: 12px; padding: 7px 10px; border-radius: 20px; }
+.plot-settings { background: #eaf0e3; }
+.plot-settings > summary { font-size: 12px; padding: 11px 20px; }
+.settings-body { max-height: min(40dvh, 320px); padding: 0 20px 16px; }
+.setting-help, .known-checkbox, .condition-item, .knowledge-list { font-size: 12px; line-height: 1.8; }
+.settings-body textarea { font-size: 13px; border-radius: 6px; }
+.settings-body select { font-size: 12px; border-radius: 6px; }
+.composer { background: #fbf9f4; padding: 13px 20px 12px; }
+.composer textarea { background: #f8f5ee; border-color: #dcd7c9; border-radius: 10px; font-size: 14px; min-height: 72px; padding: 12px; }
+.composer textarea:focus { border-color: var(--red); outline-color: var(--red); }
+.composer-footer > span, .composer-hint { font-size: 11px; }
+.composer-hint { line-height: 1.6; }
+.chat-error { border-radius: 8px; font-size: 12px; }
+.character-picker { border-radius: 16px; }
+.character-picker-close { border-radius: 8px; }
+.character-picker-group h3 { font-size: 20px; line-height: 1.6; }
+.character-picker-cards { grid-template-columns: 1fr; }
+.character-option { background: #fbf9f4; border-radius: 11px; padding: 15px; }
+.character-option.is-current { border-color: var(--red); background: #f7eee8; }
+.character-option:hover:not(:disabled) { border-color: var(--red); background: #f8f4eC; }
+.character-option-avatar { border-radius: 9px; }
+.character-group-help, .character-option-identity, .character-option-time, .character-option-action { font-size: 12px; }
+.character-current-mark { font-size: 11px; border-radius: 4px; }
+@media (max-width: 1100px) and (min-width: 761px) {
+  .chapter-view { padding: 0 16px; }
+  .reading-layout { grid-template-columns: minmax(0, 1fr) minmax(350px, 1fr); gap: 14px; }
+  .reading-pane { padding: 26px; }
+  .chat-heading, .chat-controls, .composer { padding-left: 15px; padding-right: 15px; }
+}
+@media (max-height: 760px) and (min-width: 761px) {
+  .reading-layout { min-height: 0; }
+  .chat-heading { padding-top: 12px; padding-bottom: 8px; }
+  .chat-controls { padding-top: 8px; padding-bottom: 8px; }
+  .chat-person p, .chat-disclaimer, .scene-selection-help { font-size: 11px; }
+  .composer textarea { min-height: 58px; }
+}
+@media (max-width: 760px) {
+  body.in-chapter .site-header { height: 64px; padding: 0 14px; }
+  body.in-chapter .site-header nav { gap: 12px; }
+  body.in-chapter .site-header nav a { font-size: 11px; }
+  body.in-chapter .demo-tag { font-size: 10px; padding: 4px 5px; max-width: 62px; }
+  .chapter-view { padding: 0; }
+  .chapter-topbar { height: 45px; padding: 0 14px; gap: 10px; }
+  .chapter-topbar .back-link, .chapter-topbar #chapter-breadcrumb, .text-button { font-size: 11px; }
+  .mobile-tabs { height: 41px; background: #fbf9f4; }
+  .mobile-tabs button { font-size: 14px; }
+  .reading-layout { display: block; height: calc(100dvh - 150px); min-height: 0; margin: 0; }
+  .reading-pane, .chat-pane { border: 0; border-radius: 0; box-shadow: none; }
+  .reading-pane { padding: 27px 22px 40px; }
+  .article-meta { font-size: 11px; gap: 8px; }
+  .reading-pane > h1 { font-size: 29px; }
+  .article-summary { font-size: 14px; padding: 14px; }
+  .article-body { font-size: 18px; }
+  .chat-heading { padding: 12px 15px 9px; }
+  .chat-person h2 { font-size: 20px; }
+  .chat-person p { font-size: 11px; max-width: 185px; }
+  .character-avatar { width: 36px; height: 36px; flex-basis: 36px; font-size: 22px; }
+  .plot-badge { font-size: 10px; max-width: 85px; padding: 3px 6px; }
+  .chat-disclaimer { font-size: 11px; padding: 0 15px 9px; }
+  .chat-controls { padding: 8px 14px; }
+  .scene-row select { font-size: 11px; }
+  .scene-row > label { display: none; }
+  .button.tiny, .scene-row .button, .start-row .button, .continue-details summary { min-height: 34px; font-size: 11px; }
+  .session-origin { font-size: 11px; padding: 6px 15px; }
+  .messages { min-height: 0; padding: 16px 14px; }
+  .message .message-content { font-size: 14px; padding: 13px 14px; }
+  .plot-settings > summary { font-size: 12px; padding: 9px 15px; }
+  .settings-body { padding: 0 15px 13px; max-height: 31dvh; }
+  .composer { padding: 10px 14px max(10px, env(safe-area-inset-bottom)); }
+  .composer textarea { min-height: 60px; font-size: 14px; padding: 10px; }
+  .composer-hint { display: none; }
+  .composer-footer > span { font-size: 10px; }
+  .character-picker { padding: 16px; }
+  .character-group-help { font-size: 12px; }
+  .character-option { padding: 13px; }
+  .character-option-time, .character-option-action { font-size: 12px; }
+}
+
+/* Keep conversation tools in a compact, accessible slide-down panel. */
+.chat-settings-toggle {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  flex-shrink: 0; width: 100%; min-height: 37px; padding: 8px 20px;
+  border-bottom: 1px solid var(--line); background: #fbf9f4;
+  color: var(--ink); font-size: 12px; text-align: left;
+}
+.chat-settings-toggle:hover { background: #f5f1e8; }
+.chat-settings-toggle-hint { display: inline-flex; align-items: center; gap: 9px; color: var(--muted); font-size: 11px; }
+.chat-settings-chevron { display: inline-block; transition: transform .2s ease; }
+.chat-settings-toggle[aria-expanded="true"] .chat-settings-chevron { transform: rotate(180deg); }
+.chat-settings-panel {
+  display: grid; grid-template-rows: 0fr; flex-shrink: 0;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: grid-template-rows .2s ease, opacity .2s ease, visibility 0s .2s;
+}
+.chat-settings-panel.is-open {
+  grid-template-rows: 1fr; opacity: 1; visibility: visible; pointer-events: auto;
+  transition: grid-template-rows .2s ease, opacity .2s ease, visibility 0s;
+}
+.chat-settings-clip { min-height: 0; overflow: clip; transform: translateY(-6px); transition: transform .2s ease; }
+.chat-settings-panel.is-open .chat-settings-clip { transform: translateY(0); }
+.chat-settings-content { max-height: min(40dvh, 300px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+.chat-settings-panel .start-row { flex-wrap: wrap; }
+.chat-settings-panel .continue-details[open] { flex-basis: 100%; }
+.chat-settings-panel .continue-form { position: static; width: 100%; max-height: none; margin-top: 7px; }
+@media (max-width: 760px) {
+  .chat-settings-toggle { min-height: 35px; padding: 8px 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chat-settings-panel, .chat-settings-clip, .chat-settings-chevron { transition: none; }
+}
+/* The divider occupies the existing gutter; mobile keeps its reading/chat tabs. */
+.reading-splitter { display: none; }
+@media (min-width: 761px) {
+  .reading-layout { grid-template-columns: minmax(0, var(--reading-fr, 1fr)) minmax(0, var(--chat-fr, 1fr)); }
+  .reading-layout > .reading-pane { min-width: 0; }
+  .reading-splitter {
+    display: block; position: absolute; top: 0; bottom: 0;
+    left: var(--split-position, 50%); width: 20px; transform: translateX(-50%);
+    z-index: 2; cursor: col-resize; touch-action: none; outline: none;
+  }
+  .reading-splitter::before {
+    content: ''; position: absolute; left: calc(50% - 1px); top: 14px; bottom: 14px;
+    width: 2px; border-radius: 2px; background: var(--line); opacity: 0;
+    transition: opacity .15s;
+  }
+  .reading-splitter::after {
+    content: ''; position: absolute; top: calc(50% - 22px); left: calc(50% - 2px);
+    width: 4px; height: 44px; border-radius: 4px; background: #b5b8a7;
+    transition: background .15s;
+  }
+  .reading-splitter:hover::before, .reading-splitter:focus-visible::before,
+  .resizing-reading .reading-splitter::before { opacity: 1; }
+  .reading-splitter:hover::after, .reading-splitter:focus-visible::after,
+  .resizing-reading .reading-splitter::after { background: var(--red); }
+  .reading-splitter:focus-visible { outline: 1px dashed var(--red); outline-offset: -3px; border-radius: 8px; }
+  body.resizing-reading, body.resizing-reading * { cursor: col-resize !important; user-select: none !important; }
+}

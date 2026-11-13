@@ -1,0 +1,21 @@
+services:
+  rushi:
+    build: .
+    ports:
+      - "127.0.0.1:4317:4317"
+    environment:
+      MODEL_MODE: ${MODEL_MODE:-mock}
+      MODEL_BASE_URL: ${MODEL_BASE_URL:-https://api.openai.com/v1}
+      MODEL_NAME: ${MODEL_NAME:-}
+      MODEL_API_KEY: ${MODEL_API_KEY:-}
+      MODEL_TIMEOUT_MS: ${MODEL_TIMEOUT_MS:-45000}
+      VISITOR_REQUESTS_PER_MINUTE: ${VISITOR_REQUESTS_PER_MINUTE:-12}
+      DAILY_MODEL_REQUESTS: ${DAILY_MODEL_REQUESTS:-100}
+      GLOBAL_DAILY_MODEL_REQUESTS: ${GLOBAL_DAILY_MODEL_REQUESTS:-1000}
+    volumes:
+      - rushi-data:/app/data
+      - rushi-backups:/app/backups
+    restart: unless-stopped
+volumes:
+  rushi-data:
+  rushi-backups:

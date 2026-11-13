@@ -1,0 +1,10 @@
+.git
+.env
+data
+backups
+node_modules
+test
+docs
+*.zip
+*.log
+__pycache__

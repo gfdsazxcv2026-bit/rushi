@@ -1,0 +1,30 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { mkdtempSync,mkdirSync,readdirSync,copyFileSync,rmSync,readFileSync } from 'node:fs';
+import { resolve,sep } from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { randomUUID } from 'node:crypto';
+import { createApp,root } from '../server/index.mjs';
+import { catalog } from './fixtures.mjs';
+
+test('actual SQLite backup and signing key restore visitor identity, conditions and progress',async t=>{
+  const base=resolve(root,'../../work/backup-tests');mkdirSync(base,{recursive:true});const directory=mkdtempSync(resolve(base,'run-'));
+  const data=resolve(directory,'source'),out=resolve(directory,'backups'),restored=resolve(directory,'restored');
+  const source=createApp({catalog,dataDir:data,modelConfig:{mode:'mock',timeoutMs:5000}});let target;
+  await new Promise(r=>source.server.listen(0,'127.0.0.1',r));
+  t.after(async()=>{await source.close();if(target)await target.close();assert.ok(directory.startsWith(base+sep));rmSync(directory,{recursive:true,force:true});});
+  const url=`http://127.0.0.1:${source.server.address().port}`;
+  const bootstrap=await fetch(url+'/api/bootstrap');const cookie=bootstrap.headers.get('set-cookie').split(';')[0];const {csrfToken}=await bootstrap.json();
+  const headers={Cookie:cookie,'X-CSRF-Token':csrfToken,'Content-Type':'application/json'};
+  const s=await (await fetch(url+'/api/sessions',{method:'POST',headers,body:JSON.stringify({chapterId:'jingke',sceneId:'yingzheng-a'})})).json();
+  await fetch(url+`/api/sessions/${s.id}/conditions`,{method:'POST',headers,body:JSON.stringify({text:'备份前已采用的条件',operationId:randomUUID()})});
+  await fetch(url+'/api/progress',{method:'POST',headers,body:JSON.stringify({chapterId:'jingke',ratio:0.57,view:'chat',draft:'备份前未发送的输入'})});
+  execFileSync(process.execPath,[resolve(root,'scripts/backup.mjs')],{env:{...process.env,DATA_DIR:data,BACKUP_DIR:out},encoding:'utf8'});
+  const backup=resolve(out,readdirSync(out)[0]);mkdirSync(restored,{recursive:true});
+  for(const name of ['rushi.sqlite','session-secret'])copyFileSync(resolve(backup,name),resolve(restored,name));
+  assert.equal(readFileSync(resolve(backup,'session-secret'),'utf8'),readFileSync(resolve(data,'session-secret'),'utf8'));
+  target=createApp({catalog,dataDir:restored,modelConfig:{mode:'mock',timeoutMs:5000}});await new Promise(r=>target.server.listen(0,'127.0.0.1',r));
+  const destination=`http://127.0.0.1:${target.server.address().port}`;
+  const b=await (await fetch(destination+'/api/bootstrap',{headers:{Cookie:cookie}})).json();assert.equal(b.sessions[0].id,s.id);assert.equal(b.progress.jingke.draft,'备份前未发送的输入');
+  const detail=await (await fetch(destination+`/api/sessions/${s.id}`,{headers:{Cookie:cookie}})).json();assert.equal(detail.mode,'hypothetical');assert.equal(detail.conditions[0].text,'备份前已采用的条件');
+});
